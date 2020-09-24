@@ -1,6 +1,6 @@
 # Dugong Bookstore
 
-Kelompok :
+Kelompok : <br />
 Cindy Maharani      (535180005) <br />
 Venezia Valen 	    (535180028) <br />
 Ika Chandriyani 	  (535180034) <br />
