@@ -26,43 +26,216 @@
     </div>
     
     <div class="content">
-        <!-- Disini -->
+        
+    <nav class="navbar sticky-top navbar-expand-lg bg-secondary navbar-dark" id="navigasi">
+        <a class="navbar-brand" href="#dugong">Dugong</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">
+                    Tentang kami<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#fitur">
+                    Fitur</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#genre">
+                    Genre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#review">
+                    Review</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#kontak">
+                    Contact</a>
+            </li>
+        </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                    <i data-feather="search"></i>
+                    Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Image/dugongstore.jpg" alt="BookCovers">
+            </div>
+            <div class="carousel-item">
+                <img src="Image/cover1.jpg" alt="BookCovers">
+            </div>
+            <div class="carousel-item">
+                <img src="Image/cover2.jpg" alt="BookCovers">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
     </div>
 
-    <div class="footer">
-        <div class="text-center">
-            <a href="#" class="btn mx-auto btn-light btn-lg" role="button" aria-pressed="true" href="#dugong" style="width: 100%;">
-                Baca lagi yuk</a>
+    <div class="container" data-spy="scroll" data-target=".navbar" data-offset="50">
+        <div id="about"><br></div>
+        <div class="row">
+            <h4 class="my-2 mx-auto">Apa itu Dugong Bookstore?</h4>
+            <p class="my-2 mx-auto">
+                Dugong Bookstore adalah salah satu Toko 
+                Buku terbesar di Indonesia yang bekerja 
+                sama dengan Gramedia. Didirikan pada 
+                Agustus 2020, Toko buku ini berawal dari 
+                toko buku kecil berukuran 25 meter persegi 
+                di daerah Serpong. <br><br> Perusahaan ini 
+                bekerja sama dengan penerbit-penerbit buku 
+                di dalam maupun luar negeri. Dari perusahaannya 
+                sendiri, Dugong memiliki pemasok buku yaitu 
+                Gramedia Pustaka Utma, Elex Media Komputindo, 
+                Gramedia Widya Sarana, Bhuana Ilmu Populer, 
+                dan Gramedia Majalah. Untuk pemasok dari luar 
+                negeri, seperti Prentice Hall, McGraw Hill, 
+                Addison Wesley, dan masih banyak lainnya.
+            </p>
         </div>
-        <div class="container-fluid" style="margin-bottom:0">
-            <div class="col">
-                <h3>Ayo cari buku kamu sekarang!</h3>
-                <br><br>
-                <h4>Cari kami di :</h4>
-                <p>BSD, Serpong, Tangerang Selatan, Banten, Pulau Jawa, Indonesia</p>
-                <br><br>
-            </div>
-            <div class="col">
-                <h4>Follow kami, hayuk!</h4>
-                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal">
-                    <i data-feather="instagram"></i>
-                </button>
-                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal">
-                    <i data-feather="twitter"></i>
-                </button>
+    
+        <div id="fitur"><br></div>
+        <div class="row" style="background-image: url(Image/back_fitur.jpg); background-size: cover;">
+            <h4 class="my-2 mx-auto">Apa yang membuat Dugong Bookstore direkomendasi?</h4>
+            <div class="d-flex align-content-end flex-wrap">
+                <div class="fitur mx-auto">
+                    <h4>Mudah kok</h4>
+                    <p>Tampilan menarik dan mudah untuk digunakan
+                       selalu diutamakan.
+                    </p>
+                </div>
+                <div class="fitur mx-auto">
+                    <h4>Tenang! Lengkap disini</h4>
+                    <p>Ingin cari buku apa disini? Tinggal ketik saja 
+                       judul bukunya atau No. ISBN-nya. Dijamin ada stoknya.
+                    </p>
+                </div>
+                <div class="fitur mx-auto">
+                    <h4>Ga Lama hehe</h4>
+                    <p>Database kami sudah pakai aloritma yang canggih 
+                       jadi tidak ada loading lama. Kecuali kamu belum 
+                       tau mau cari buku apa hehe.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div id="genre"><br></div>
+        <div class="row" style="background-image: url(Image/back_genre.jpg); background-size: cover;">
+            <h4 class="my-2 mx-auto">Genre bukunya ada apa aja?</h4>
+            <div class="d-flex align-content-end flex-wrap">
+                <div class="genre mx-auto">
+                    <i data-feather="moon">Fiksi</i>
+                    <br><br>
+                    <p>Fiksi</p>
+                </div>
+                <div class="genre mx-auto">
+                    <i data-feather="compass"></i>
+                    <br><br>
+                    <p>Non-Fiksi</p>
+                </div>
+                <div class="genre mx-auto">
+                    <i data-feather="heart"></i>
+                    <br><br>
+                    <p>Romantis</p>
+                </div>
+                <div class="genre mx-auto">
+                    <i data-feather="eye"></i>
+                    <br><br>
+                    <p>Horror</p>
+                </div>
+                <div class="genre mx-auto">
+                    <i data-feather="smile"></i>
+                    <br><br>
+                    <p>Komedi / Humor</p>
+                </div>
+                <div class="genre mx-auto">
+                    <i data-feather="book-open"></i>
+                    <br><br>
+                    <p>Edukasi</p>
+                </div>
+                <div class="genre mx-auto">
+                    <i data-feather="star"></i>
+                    <br><br>
+                    <p>Buku anak-anak</p>
+                </div>
+                <div class="genre mx-auto">
+                    <i data-feather="layers"></i>
+                    <br><br>
+                    <p>Campuran</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="review"><br></div>
+        <div class="row" style="background-image: url(Image/back_review.jpg);">
+            <h4 class="my-2 mx-auto">Simak kata mereka, yuk!</h4>
+            <div class="d-flex align-content-end flex-wrap">
+                <div class="review mx-auto">
+                    <h4>Kata Bambang...</h4>
+                    <br><br>
+                    <p>Setelah saya ke toko ini, rasanya 
+                        jadi ingat waktu dulu kuliah. 
+                        Harus beli buku, dan peralatan 
+                        kantor. Untungnya, toko ini menyediakan 
+                        keperluan tersebut. Terima kasih, 
+                        Dugong Bookstore!
+                    </p>
+                </div>
+                <div class="review mx-auto">
+                    <h4>Kata Budi...</h4>
+                    <br><br>
+                    <p>Saya sempat kesulitan untuk mencari 
+                        toko buku yang buka hingga larut malam, 
+                        namun setelah mencari tahu akhirnya 
+                        saya menemukan Dugong Bookstore. 
+                        Terima kasih karena masih buka 
+                        hingga larut malam!
+                    </p>
+                </div>
+                <div class="review mx-auto">
+                    <h4>Kata Bejo...</h4>
+                    <br><br>
+                    <p>Toko buku ini tidak kalah saing 
+                        dengan toko buku sebelah. Variasi 
+                        buku yang disediakan ditambah 
+                        dengan akses internet yang gratis 
+                        untuk pelanggan membuat toko ini 
+                        selalu dikunjungi.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="kontak" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Tunggu ya!</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Kontak kami!</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        Sedang dalam pembuatan media sosial. Biar viral!
+                        <img src="Image/Kontak.jpg" alt="kontak">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -71,6 +244,51 @@
             </div>
         </div>
     </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="text-center">
+                <a href="#" class="btn mx-auto btn-light btn-lg" role="button" aria-pressed="true" href="#dugong" style="width: 100%;">
+                    Baca lagi yuk</a>
+            </div>
+            <div class="container-fluid" style="margin-bottom:0">
+                <div class="col">
+                    <h3>Ayo cari buku kamu sekarang!</h3>
+                    <br><br>
+                    <h4>Cari kami di :</h4>
+                    <p>BSD, Serpong, Tangerang Selatan, Banten, Pulau Jawa, Indonesia</p>
+                    <br><br>
+                </div>
+                <div class="col">
+                    <h4>Follow kami, hayuk!</h4>
+                    <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal">
+                        <i data-feather="instagram"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal">
+                        <i data-feather="twitter"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Tunggu ya!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Sedang dalam pembuatan media sosial. Biar viral!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <script>feather.replace()</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
