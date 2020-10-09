@@ -1,0 +1,62 @@
+nav {
+    background: rgb(0,119,182);
+    background: radial-gradient(circle, rgba(0,119,182,1) 10%, rgba(2,71,145,1) 71%, rgba(2,62,138,1) 82%);
+    padding: 50px auto;
+}
+#logo {
+    width: 70px;
+}
+.help {
+    color: white;
+}
+/* Content */
+.carousel {
+    width: 90%;
+    margin: auto;
+    margin: 20px auto;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+    background-color: black;
+    opacity: 50%;
+    transition: .5s;
+}
+.carousel-inner img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+btn {
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    padding: 50px 0;
+}
+.card {
+    background: rgb(76,173,251);
+    background: linear-gradient(58deg, rgba(76,173,251,1) 16%, rgba(173,232,244,1) 51%, rgba(72,202,228,1) 83%);
+    width: 400px;
+    height: 500px;
+    border: 1px solid #fcb9b2;
+    border-radius: 10px;
+}
+.card img {
+    margin: auto;
+    width: 90%;
+}
+/* Footer */
+.footer {
+    font-family: 'Nunito', sans-serif;
+}
+.container-fluid {
+    background: rgb(0,119,182);
+    background: radial-gradient(circle, rgba(0,119,182,1) 10%, rgba(2,71,145,1) 71%, rgba(2,62,138,1) 82%);
+    padding: 40px;
+    letter-spacing: 2px;
+    color: white;
+}
