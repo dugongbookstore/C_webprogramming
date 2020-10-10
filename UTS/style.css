@@ -61,6 +61,36 @@ btn {
     color: white;
 }
 
+
+/* PROMO*/
+.promo .container{
+    width: 80%;
+    background: radial-gradient(circle, rgba(76,173,251,1) 16%, rgba(173,232,244,1) 51%, rgba(72,202,228,1) 83%);
+    padding: 40px;
+    margin : auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color:navy;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+}
+.promo img{
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    transition: transform 1s;
+} 
+.promo img:hover{
+    transform: scale(1.1);
+}
+.promo marquee{
+    width: 80%;
+    display: block;
+    margin : auto;
+    margin-top: 5%;
+    color:navy;
+}
+
 #searcharea{
     margin: 10px auto;
     text-align: center;
