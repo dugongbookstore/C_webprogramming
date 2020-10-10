@@ -61,6 +61,7 @@ btn {
     color: white;
 }
 
+
 /* PROMO*/
 .promo .container{
     width: 80%;
@@ -89,3 +90,139 @@ btn {
     margin-top: 5%;
     color:navy;
 }
+
+#searcharea{
+    margin: 10px auto;
+    text-align: center;
+    background: #ab9fd4;
+    padding: 10px;
+    width: 30%;
+
+
+}
+
+#searcharea label{
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: Papyrus, fantasy;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: #ffffff;
+}
+
+#searcharea p{
+    margin: 0;
+    font-family: Papyrus, fantasy;
+    line-height: 1em;
+    padding-bottom: 5px;
+}
+
+#searcharea input{
+    width: 80%;
+    text-align: center;
+}
+
+
+#update{
+    justify-self: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 70%;
+    margin: 0 auto;
+    border-top: 1px dotted blue;
+}
+
+#update ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#update ul li{
+    width: 100%;
+    padding: 0 20px;
+    padding-bottom: 10px;
+    height: 110px;
+    overflow: hidden;
+    border-bottom: 1px dotted blue;
+
+    -webkit-animation: myanim 1s;
+    -webkit-transition: height 0.3s ease-out;
+
+}
+
+#update li:hover{
+    background: #fffce5;
+    min-height: 110px;
+    height: 250px;
+    overflow: visible;
+}
+
+#update h2{
+    margin: auto;
+    padding: 0;
+    font-size: 1.7em;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    color: #000000;
+    border-bottom: 1px dotted blue;
+    margin-bottom: auto;
+}
+
+
+@-webkit-keyframes myanim{
+    0%{opacity: 0.3;}
+    100%{opacity: 1.0;}
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    width: 300px;
+    height: 380px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+      background-color: #fd8578;
+    color: white;
+    transform: rotateY(180deg);
+  }
