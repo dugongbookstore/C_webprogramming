@@ -1,0 +1,364 @@
+[
+    {
+        "Judul" : "Nebula" ,
+
+        "Author" : "Tere Liye" ,
+
+        "Tahun" : "2019" ,
+
+        "ISBN" : "9786020639536" ,
+
+        "Lokasi" : "A1",
+
+        "Stok" : "100",
+
+        "cover" : "nl1.jpg"
+    },
+    {
+        "Judul" : "Laskar Pelangi" ,
+
+        "Author" : "Andrea Hirata" ,
+
+        "Tahun" : "2005" ,
+
+        "ISBN" : "9793062797" ,
+
+        "Lokasi" : "A1",
+
+        "Stok" : "100",
+
+        "cover" : "nl2.jpg"
+    },
+    {
+        "Judul" : "Masih Ingatkah Kau Jalan Pulang" ,
+
+        "Author" : "Nadhifa Allya Tsana, Sapardi Djoko Damono" ,
+
+        "Tahun" : "2020" ,
+
+        "ISBN" : "9786020638331" ,
+
+        "Lokasi" : "A1",
+
+        "Stok" : "100",
+
+        "cover" : "nl3.jpg"
+    },
+    {
+        "Judul" : "MetroPop: Ganjil Genap" ,
+
+        "Author" : "Almira Bastar" ,
+
+        "Tahun" : "2020" ,
+
+        "ISBN" : "9786020638010" ,
+
+        "Lokasi" : "A1",
+
+        "Stok" : "100",
+
+        "cover" : "nl4.jpg"
+    },
+
+    {
+        "Judul" : "Cara Berbahagia Tanpa Kepala",
+        
+        "Author" : "Triskaidekaman" ,
+
+        "Tahun" : "2019" ,
+
+        "ISBN" : "9786020629933" ,
+
+        "Lokasi" : "A1",
+
+        "Stok" : "100",
+
+        "cover" : "nl5.jpg"
+    },
+    {
+        "Judul" : "Nanti Kita Cerita tentang Hari Ini",
+
+        "Author" : "Marchella FP" ,
+
+        "Tahun" : "2018" ,
+
+        "ISBN" : "9786024248215"  ,
+
+        "Lokasi" : "A1",
+
+        "Stok" : "100",
+
+        "cover" : "nl6.jpg"
+    },
+    {
+        "Judul" : "Six of Crows" ,
+
+        "Author" : "Leigh Bardugo" ,
+
+        "Tahun" : "2015" ,
+
+        "ISBN" : "9781627795098" ,
+
+        "Lokasi" : "B1",
+
+        "Stok" : "100",
+
+        "cover" : "ni1.jpg"
+    },
+    {
+        "Judul" : "Crooked Kingdom" ,
+
+        "Author" : "Leigh Bardugo" ,
+
+        "Tahun" : "2016" ,
+
+        "ISBN" : "9781250119315" ,
+
+        "Lokasi" : "B1",
+
+        "Stok" : "100",
+
+        "cover" : "ni2.png"
+    },
+
+    {
+        "Judul" : "Cinder" ,
+
+        "Author" : "Marissa Meyer" ,
+
+        "Tahun" : "2013" ,
+
+        "ISBN" : "9781250007209" ,
+
+        "Lokasi" : "B1",
+
+        "Stok" : "100",
+
+        "cover" : "ni3.png"
+    },
+
+    {
+        "Judul" : "Scarlet" ,
+
+        "Author" : "Marissa Meyer" ,
+
+        "Tahun" : "2014" ,
+
+        "ISBN" : "9781250007216" ,
+
+        "Lokasi" : "B1",
+
+        "Stok" : "100",
+
+        "cover" : "ni4.png"
+    },
+
+    {
+        "Judul" : "Cress" ,
+
+        "Author" : "Marissa Meyer" ,
+
+        "Tahun" : "2015" ,
+
+        "ISBN" : "9781250007223" ,
+
+        "Lokasi" : "B1",
+
+        "Stok" : "100",
+
+        "cover" : "ni5.png"
+    },
+    {
+        "Judul" : "Winter" ,
+
+        "Author" : "Marissa Meyer" ,
+
+        "Tahun" : "2018" ,
+
+        "ISBN" : "9781250007230" ,
+
+        "Lokasi" : "B1",
+
+        "Stok" : "100",
+
+        "cover" : "ni6.png"
+    },
+    {
+        "Judul" : "Komik KKPK : Hacker Cilik" ,
+
+        "Author" : "Abdurrahman Aufa Liamrillah, dkk." ,
+
+        "Tahun" : "2020" ,
+
+        "ISBN" : "9786232540439"  ,
+
+        "Lokasi" : "C1",
+
+        "Stok" : "100",
+
+        "cover" : "kl1.jpg"
+    },
+    {
+        "Judul" :  "Why? Veterinary Medicine",
+        "Author" :  "YeaRimDang" ,
+        
+        "Tahun" : "2019" ,
+        
+        "ISBN" : "9786230005930"   ,
+
+        "Lokasi" : "C1",
+
+        "Stok" : "100",
+
+        "cover" : "kl2.jpg"
+    },
+    {
+        "Judul" : "Nobita dan pulau keajaiban" ,
+
+        "Author" : "Fujiko F. Fujio" ,
+
+        "Tahun" : "2020" ,
+
+        "ISBN" : "9786230019524" , 
+
+        "Lokasi" : "C1",
+
+        "Stok" : "100",
+
+        "cover" : "kl3.jpg"
+    },
+    {
+        "Judul" : "Light Novel Detektif Conan: Captured in Her Eyes",
+
+        "Author" : "Aoyama Gosho" ,
+
+        "Tahun" : "2020" ,
+
+        "ISBN" : "9786230020681"  ,
+
+        "Lokasi" : "C1",
+
+        "Stok" : "100",
+
+        "cover" : "kl4.jpg"
+    },
+    {
+        "Judul" : "Si Juki dan Mang Awung 2" ,
+
+        "Author" : "Faza Ibnu Ubaydillah Salman" ,
+
+        "Tahun" : "2020" ,
+
+        "ISBN" : "9786230020308"  ,
+
+        "Lokasi" : "C1",
+
+        "Stok" : "100",
+
+        "cover" : "kl5.jpg"
+    },
+    {
+        "Judul" :  "Bono-chan 01" ,
+
+        "Author" : "Mikio Igarashi" ,
+
+        "Tahun" : "2020" ,
+
+        "ISBN" : "9786230014154"  ,
+
+        "Lokasi" : "C1",
+
+        "Stok" : "100",
+
+        "cover" : "kl6.jpg"
+    },
+    {
+        "Judul" : "Boruto: Naruto Next Generations, Vol. 2" ,
+
+        "Author" : "Masashi Kishimoto (Creator), Mikio Ikemoto (Illustrator)",
+
+        "Tahun" : "2017" ,
+
+        "ISBN" : "9781421595849" ,
+
+        "Lokasi" : "D1",
+
+        "Stok" : "100",
+
+        "cover" : "ki1.png"
+    },
+    {
+        "Judul" : "One-Punch Man, Vol. 21" ,
+
+        "Author" : "ONE (Creator), Yusuke Murata (Illustrator)",
+
+        "Tahun" : "2020" ,
+
+        "ISBN" : "9781974717644" ,
+
+        "Lokasi" : "D1",
+
+        "Stok" : "100",
+
+        "cover" : "ki2.jpg"
+    },
+    {
+        "Judul" : "Attack on Titan 1"  ,
+
+        "Author" : "Hajime Isayama",
+
+        "Tahun" : "2012" ,
+
+        "ISBN" : "9781612620244" ,
+
+        "Lokasi" : "D1",
+
+        "Stok" : "100",
+
+        "cover" : "ki3.png"
+    },
+    {
+        "Judul" : "My Hero Academia, Vol. 1"  ,
+        "Author" : "Kohei Horikoshi" ,
+
+        "Tahun" : "2015" ,
+
+        "ISBN" : "9781421582696" ,
+
+        "Lokasi" : "D1",
+
+        "Stok" : "100",
+
+        "cover" : "ki4.png"
+    },
+    {
+        "Judul" : "Hunter x Hunter, Vol. 1" ,
+
+        "Author" : "Yoshihiro Togashi" ,
+
+        "Tahun" : "2005" ,
+
+        "ISBN" : "9781591167532" ,
+
+        "Lokasi" : "D1",
+
+        "Stok" : "100",
+
+        "cover" : "ki5.png"
+    },
+    {
+        "Judul" : "Fairy Tail, Vol. 6" ,
+
+        "Author" : "Hiro Mashima" ,
+
+        "Tahun" : "2011" ,
+
+        "ISBN" : "9781612620992" ,
+
+        "Lokasi" : "D1",
+
+        "Stok" : "100",
+
+        "cover" : "ki6.png"
+    }
+]
