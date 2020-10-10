@@ -1,7 +1,7 @@
 nav {
     background: rgb(0,119,182);
     background: radial-gradient(circle, rgba(0,119,182,1) 10%, rgba(2,71,145,1) 71%, rgba(2,62,138,1) 82%);
-    padding: 50px auto;    
+    padding: 50px auto;
 }
 #logo {
     width: 70px;
@@ -30,7 +30,7 @@ nav {
 btn {
     margin: 0 auto;
 }
-.row {
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -59,6 +59,34 @@ btn {
     padding: 40px;
     letter-spacing: 2px;
     color: white;
+}
+/* PROMO*/
+.promo .container{
+    width: 80%;
+    background: radial-gradient(circle, rgba(76,173,251,1) 16%, rgba(173,232,244,1) 51%, rgba(72,202,228,1) 83%);
+    padding: 40px;
+    margin : auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color:navy;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+}
+.promo img{
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    transition: transform 1s;
+} 
+.promo img:hover{
+    transform: scale(1.1);
+}
+.promo marquee{
+    width: 80%;
+    display: block;
+    margin : auto;
+    margin-top: 5%;
+    color:navy;
 }
 #searcharea{
     margin: 10px auto;
@@ -154,11 +182,11 @@ btn {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-}
+} 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-} 
+}
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
     position: absolute;
@@ -174,11 +202,10 @@ btn {
 }
 /* Style the back side */
 .flip-card-back {
-    background-color: #fd8578;
+      background-color: #fd8578;
     color: white;
     transform: rotateY(180deg);
 }
-
 /*Komik/Novel*/
 .card_book {
     width: 300px;
