@@ -13,10 +13,10 @@ $('#search').keyup(function(){
 
            $.each(data,function(key,val){
                if((val.Judul.search(myExp) !=-1) || (val.Author.search(myExp) != -1) || (val.Tahun.search(myExp) != -1)|| (val.ISBN.search(myExp) != -1)){
-               output += '<div class="flip-card card mx-suto my-4">';
+               output += '<div class="flip-card mx-auto my-4">';
                output += '<div class="flip-card-inner">';
                output += '<div class="flip-card-front">';
-               output += '<img src="img/' + val.cover + '" alt="'+ val.cover + '" style="width:300px;height:380px;" />';
+               output += '<img src="img/' + val.cover + '" alt="'+ val.cover + '" style="width:100%;height:100%;" />';
                output += '</div><div class="flip-card-back">';
                output += '<h2>'+val.Judul+'</h2>';
                output += '<p>' + val.Author + '</p>';
