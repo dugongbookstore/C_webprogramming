@@ -12,7 +12,11 @@
 
         "Stok" : "100",
 
-        "cover" : "nl1.jpg"
+        "cover" : "nl1.jpg",
+
+        "sinopsis" : "Buku ini merupakan cerita lanjutan dari buku Selena, masih menceritakan kisah Miss Selena dan kedua sahabatnya yang sedang menempuh pendidikannya di Akademi Bayangan Tingkat Tinggi. Di buku ini lah, terungkap siapa sebenernya orang tua Raib. Dan juga permulaan menuju Klan Aldebaran.",
+
+        "href" : "dets/nl1.html"
     },
     {
         "Judul" : "Laskar Pelangi" ,
@@ -27,7 +31,11 @@
 
         "Stok" : "100",
 
-        "cover" : "nl2.jpg"
+        "cover" : "nl2.jpg",
+
+        "sinopsis" : "aaa",
+
+        "href" : "dets/nl2.html"
     },
     {
         "Judul" : "Masih Ingatkah Kau Jalan Pulang" ,
@@ -42,7 +50,11 @@
 
         "Stok" : "100",
 
-        "cover" : "nl3.jpg"
+        "cover" : "nl3.jpg",
+
+        "sinopsis" : "",
+
+        "href" : "dets/nl3.html"
     },
     {
         "Judul" : "MetroPop: Ganjil Genap" ,
@@ -57,7 +69,11 @@
 
         "Stok" : "100",
 
-        "cover" : "nl4.jpg"
+        "cover" : "nl4.jpg",
+
+        "sinopsis" : "",
+
+        "href" : "dets/nl4.html"
     },
 
     {
@@ -73,7 +89,11 @@
 
         "Stok" : "100",
 
-        "cover" : "nl5.jpg"
+        "cover" : "nl5.jpg",
+
+        "sinopsis" : "",
+
+        "href" : "dets/nl5.html"
     },
     {
         "Judul" : "Nanti Kita Cerita tentang Hari Ini",
@@ -88,7 +108,11 @@
 
         "Stok" : "100",
 
-        "cover" : "nl6.jpg"
+        "cover" : "nl6.jpg",
+
+        "sinopsis" : "",
+
+        "href" : "dets/nl6.html"
     },
     {
         "Judul" : "Six of Crows" ,
@@ -103,7 +127,11 @@
 
         "Stok" : "100",
 
-        "cover" : "ni1.jpg"
+        "cover" : "ni1.jpg",
+
+        "sinopsis" : "",
+
+        "href" : "dets/ni1.html"
     },
     {
         "Judul" : "Crooked Kingdom" ,
@@ -118,7 +146,11 @@
 
         "Stok" : "100",
 
-        "cover" : "ni2.png"
+        "cover" : "ni2.png",
+
+        "sinopsis" : "",
+
+        "href" : "dets/ni2.html"
     },
 
     {
@@ -134,7 +166,11 @@
 
         "Stok" : "100",
 
-        "cover" : "ni3.png"
+        "cover" : "ni3.png",
+
+        "sinopsis" : "",
+
+        "href" : "dets/ni3.html"
     },
 
     {
@@ -150,7 +186,11 @@
 
         "Stok" : "100",
 
-        "cover" : "ni4.png"
+        "cover" : "ni4.png",
+
+        "sinopsis" : "",
+
+        "href" : "dets/ni4.html"
     },
 
     {
@@ -166,7 +206,11 @@
 
         "Stok" : "100",
 
-        "cover" : "ni5.png"
+        "cover" : "ni5.png",
+
+        "sinopsis" : "",
+
+        "href" : "dets/ni5.html"
     },
     {
         "Judul" : "Winter" ,
@@ -181,7 +225,11 @@
 
         "Stok" : "100",
 
-        "cover" : "ni6.png"
+        "cover" : "ni6.png",
+
+        "sinopsis" : "",
+
+        "href" : "dets/ni6.html"
     },
     {
         "Judul" : "Komik KKPK : Hacker Cilik" ,
@@ -196,7 +244,11 @@
 
         "Stok" : "100",
 
-        "cover" : "kl1.jpg"
+        "cover" : "kl1.jpg",
+
+        "sinopsis" : "",
+
+        "href" : "dets/kl1.html"
     },
     {
         "Judul" :  "Why? Veterinary Medicine",
@@ -210,7 +262,11 @@
 
         "Stok" : "100",
 
-        "cover" : "kl2.jpg"
+        "cover" : "kl2.jpg",
+
+        "sinopsis" : "",
+
+        "href" : "dets/kl2.html"
     },
     {
         "Judul" : "Nobita dan pulau keajaiban" ,
@@ -225,7 +281,11 @@
 
         "Stok" : "100",
 
-        "cover" : "kl3.jpg"
+        "cover" : "kl3.jpg",
+
+        "sinopsis" : "",
+
+        "href" : "dets/kl3.html"
     },
     {
         "Judul" : "Light Novel Detektif Conan: Captured in Her Eyes",
@@ -240,7 +300,11 @@
 
         "Stok" : "100",
 
-        "cover" : "kl4.jpg"
+        "cover" : "kl4.jpg",
+
+        "sinopsis" : "",
+
+        "href" : "dets/kl4.html"
     },
     {
         "Judul" : "Si Juki dan Mang Awung 2" ,
@@ -255,7 +319,11 @@
 
         "Stok" : "100",
 
-        "cover" : "kl5.jpg"
+        "cover" : "kl5.jpg",
+
+        "sinopsis" : "",
+
+        "href" : "dets/kl5.html"
     },
     {
         "Judul" :  "Bono-chan 01" ,
@@ -270,7 +338,11 @@
 
         "Stok" : "100",
 
-        "cover" : "kl6.jpg"
+        "cover" : "kl6.jpg",
+
+        "sinopsis" : "",
+
+        "href" : "dets/kl6.html"
     },
     {
         "Judul" : "Boruto: Naruto Next Generations, Vol. 2" ,
@@ -285,7 +357,12 @@
 
         "Stok" : "100",
 
-        "cover" : "ki1.png"
+        "cover" : "ki1.png",
+
+        "sinopsis" : ""
+        ,
+
+        "href" : "dets/ki1.html"
     },
     {
         "Judul" : "One-Punch Man, Vol. 21" ,
@@ -300,7 +377,11 @@
 
         "Stok" : "100",
 
-        "cover" : "ki2.jpg"
+        "cover" : "ki2.jpg",
+
+        "sinopsis" : "",
+
+        "href" : "dets/ki2.html"
     },
     {
         "Judul" : "Attack on Titan 1"  ,
@@ -315,7 +396,11 @@
 
         "Stok" : "100",
 
-        "cover" : "ki3.png"
+        "cover" : "ki3.png",
+
+        "sinopsis" : "",
+
+        "href" : "dets/ki3.html"
     },
     {
         "Judul" : "My Hero Academia, Vol. 1"  ,
@@ -329,7 +414,11 @@
 
         "Stok" : "100",
 
-        "cover" : "ki4.png"
+        "cover" : "ki4.png",
+
+        "sinopsis" : "",
+
+        "href" : "dets/ki4.html"
     },
     {
         "Judul" : "Hunter x Hunter, Vol. 1" ,
@@ -344,7 +433,11 @@
 
         "Stok" : "100",
 
-        "cover" : "ki5.png"
+        "cover" : "ki5.png",
+
+        "sinopsis" : "",
+
+        "href" : "dets/ki5.html"
     },
     {
         "Judul" : "Fairy Tail, Vol. 6" ,
@@ -359,6 +452,10 @@
 
         "Stok" : "100",
 
-        "cover" : "ki6.png"
+        "cover" : "ki6.png",
+
+        "sinopsis" : "",
+
+        "href" : "dets/ki6.html"
     }
 ]
