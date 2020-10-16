@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@700&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>Search</title>
@@ -13,7 +14,7 @@
 
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <a class="navbar-brand" href="index.html">
                 <img id="logo" src="img/logodugong.png" alt="Logo">
             </a>
@@ -21,14 +22,15 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <h5 style="color: white;">Dugong Bookstore</h5>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Novel
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Lokal</a>
-                            <a class="dropdown-item" href="#">Impor</a>
+                            <a class="dropdown-item" href="novel-lokal-impor.html#lokal">Lokal</a>
+                            <a class="dropdown-item" href="novel-lokal-impor.html#impor">Impor</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -36,8 +38,8 @@
                             Komik
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Lokal</a>
-                            <a class="dropdown-item" href="#">Impor</a>
+                            <a class="dropdown-item" href="komik.html#lokal">Lokal</a>
+                            <a class="dropdown-item" href="komik.html#impor">Impor</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -68,6 +70,7 @@
                     </div>
                     <div class="modal-body">
                         Sedang dalam maintenance. Bisa kontak kami ya!
+                        <img src="img/bantuan.jpg" alt="Bantuan">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -76,17 +79,16 @@
             </div>
         </div>
     </header>
+    <main>
+        <div id="searcharea">
+            <label for="search">Search Books</label>
+            <p>Input Judul atau Author atau Tahun Terbit atau ISBN</p>
+            <input type="search" name="search" id="search" placeholder="Judul / Author / Tahun / ISBN">
+        </div>
 
-    <div id="searcharea">
-        <label for="search">Search Books</label>
-        <p>Input Judul atau Author atau Tahun Terbit atau ISBN</p>
-        <input type="search" name="search" id="search" placeholder="Judul / Author / Tahun / ISBN">
-    </div>
-    
-    <div id="update">
-        
-    </div>
-
+        <div id="update">
+        </div>
+    </main>
     <footer>
         <div class="container-fluid" style="margin-bottom:0">
             <div class="col">
@@ -98,7 +100,7 @@
             </div>
             <div class="col">
                 <h4>Follow kami, hayuk!</h4>
-                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal">
+                <button type="button" class="btn btn-outline-light" onclick="window.open('https://instagram.com/dugongbookstore?igshid=164akt2b2k6ef','_blank')">
                     <i data-feather="instagram"></i>
                 </button>
                 <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal">
@@ -126,14 +128,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
