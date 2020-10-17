@@ -65,6 +65,11 @@ footer {
     margin: auto;
     width: 90%;
 }
+.subscribe {
+    background-color: lightskyblue;
+    padding: 40px 50px;
+    text-align: center;
+}
 /* --PROMO-- */
 .promo .container{
     width: 70%;

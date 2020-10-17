@@ -35,3 +35,9 @@ $('#search').keyup(function(){
         }
     });
 });
+
+/* Newsletter */
+$('#newsForm').on('submit', function(e){
+    e.preventDefault();
+    $('#newsModal').modal('show');
+});
