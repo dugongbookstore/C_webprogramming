@@ -65,8 +65,24 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        Sedang dalam maintenance. Bisa kontak kami ya!
-                        <img src="img/bantuan.jpg" alt="Bantuan">
+                        1. Apa itu website dugong bookstore?
+                        <p>Website untuk melihat ketersediaan buku pada toko kami. Anda juga dapat
+                            melihat detail buku yang tersedia.
+                        </p><br>
+                        2. Bagaimana cara menggunakannya?
+                        <p>Silahkan pilih kategori buku yang ingin anda lihat. Saat ini hanya ada
+                            novel dan komik. Anda dapat memilih buku yang tersedia. Klik gambar buku
+                            untuk melihat sinopsisnya.
+                        </p><br>
+                        3. Saya tidak dapat melihat buku favorit saya, bagaimana?
+                        <p>Silahkan gunakan kotak search yang tersedia di kanan atas halaman kami.
+                            Apabila tidak ditemukan, maka buku tersebut mungkin belum masuk kedalam
+                            toko kami.
+                        </p><br>
+                        <p>Untuk bantuan lebih lanjut, hubungi social media kami. Staff kami akan dengan sigap membantu
+                            anda!
+                        </p>
+                        <button type="button" class="btn btn-primary" onclick="location.href='#sosmed'" data-dismiss="modal">Hubungi kami</a>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -86,10 +102,10 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block" src="img/promogabungan.png" alt="Promo1">
+                    <img class="d-block" src="img/promogabungan.png" alt="Promo1" onclick="window.open('promo.html#promo2')">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block" src="img/promo3.png" alt="Promo2">
+                    <img class="d-block" src="img/promo3.png" alt="Promo2" onclick="window.open('promo.html#promo3')">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block" src="img/na.png" alt="NewArriv">
@@ -115,19 +131,19 @@
         <div class="container">
             <h1>Best Seller</h1>
             <div class="row">
-                <div class="card mx-auto my-4" data-toggle="modal" data-target="#sinop">
+                <div class="card mx-auto my-4" onclick="window.open('dets/kl2.html','mywindow')">
                     <img src="img/kl2.jpg">
                 </div>
-                <div class="card mx-auto my-4">
+                <div class="card mx-auto my-4"  onclick="window.open('dets/ki1.html','mywindow')"">
                     <img src="img/ki1.png">
                 </div>
-                <div class="card mx-auto my-4">
+                <div class="card mx-auto my-4" onclick="window.open('dets/nl6.html','mywindow')">
                     <img src="img/nl6.jpg">
                 </div>
-                <div class="card mx-auto my-4">
+                <div class="card mx-auto my-4" onclick="window.open('dets/ni2.html','mywindow')">
                     <img src="img/ni2.png">
                 </div>
-                <div class="card mx-auto my-4">
+                <div class="card mx-auto my-4" onclick="window.open('dets/kl6.html','mywindow')">
                     <img src="img/kl6.jpg">
                 </div>
             </div>
@@ -173,7 +189,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Buku ini merupakan cerita lanjutan dari buku Selena, masih menceritakan kisah Miss Selena dan kedua sahabatnya yang sedang menempuh pendidikannya di Akademi Bayangan Tingkat Tinggi. Di buku ini lah, terungkap siapa sebenernya orang tua Raib. Dan juga permulaan menuju Klan Aldebaran.
+                    Buku ini merupakan cerita lanjutan dari buku Selena, masih menceritakan kisah Miss Selena 
+                    dan kedua sahabatnya yang sedang menempuh pendidikannya di Akademi Bayangan Tingkat Tinggi. 
+                    Di buku ini lah, terungkap siapa sebenernya orang tua Raib. Dan juga permulaan menuju 
+                    Klan Aldebaran.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -191,6 +210,7 @@
                 <p>BSD, Serpong, Tangerang Selatan, Banten, Pulau Jawa, Indonesia</p>
                 <br><br>
             </div>
+            <div id="sosmed"></div>
             <div class="col">
                 <h4>Follow kami, hayuk!</h4>
                 <button type="button" class="btn btn-outline-light" onclick="window.open('https://instagram.com/dugongbookstore?igshid=164akt2b2k6ef','_blank')">
