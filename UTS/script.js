@@ -24,7 +24,7 @@ $('#search').keyup(function(){
                 output += '<p>' + val.ISBN + '</p>';
                 output += '<p>Lokasi: ' + val.Lokasi + '</p>';
                 output += '<p>Stok: ' + val.Stok + '</p>';
-                output += '<a href="'+val.href+'"> Lebih Lanjut </a>';
+                output += '<a href="'+val.href+'" target="_blank"> Lebih Lanjut </a>';
                 output += '</div></div></div>';
               
                 }
