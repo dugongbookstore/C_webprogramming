@@ -60,6 +60,9 @@
     <form class="form-inline justify-content-center" onsubmit="openModal()" id="newsForm">
         <input type="email" class="form-control form-control-lg col-5" id="email" required placeholder="Email anda" value>
         <button type="submit" class="btn btn-primary ml-3">Dapatkan promo!</button>
+        <% if (locals.error) { %>
+            <span class="text-danger pl-2"><%= error %></span>
+        <% } %>
     </form>
     <br>
 </div>
