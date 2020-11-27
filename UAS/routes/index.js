@@ -1,14 +1,6 @@
 const express = require("express");
 const bcrypt = require('bcrypt');
-const mongoose = require('mongoose');
-mongoose.connect(
-  "mongodb://127.0.0.1:27017/MongoDB",
-  {useNewUrlParser: true}
-);
-const db = mongoose.connection;
-db.once("open", () =>{
-  console.log("Successfully connected to MongoDB using Mongoose!");
-});
+
 var MongoClient = require('mongodb').MongoClient,
     dbURL = "mongodb://127.0.0.1:27017",
     dbName = "db-dugongbookstore"
