@@ -10,6 +10,7 @@ db.once("open",()=> {
 });
 //Type 1
 const bookSchema = mongoose.Schema({
+    img: String,
     judul: String,
     author: String,
     year: String,
