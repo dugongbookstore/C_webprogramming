@@ -3,197 +3,61 @@
 <div class="container my-5">
     <h1>Lokal</h1>
     <div class="row">
-        <div class="card_book mx-auto my-4" onclick="window.open('/nl1','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/nl1.jpg">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">Nebula</h2>
-                    <p class="my-auto p-2">Author : Tere Liye</p>
-                    <p class="my-auto p-2">Tahun : 2019</p>
-                    <p class="my-auto p-2">ISBN : 9786020639536</p>
-                    <p class="my-auto p-2">Lokasi : A1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/nl2','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/nl2.jpg">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">Laskar Pelangi</h2>
-                    <p class="my-auto p-2">Author : Andrea Hirata</p>
-                    <p class="my-auto p-2">Tahun : 2005</p>
-                    <p class="my-auto p-2">ISBN : 9793062797 </p>
-                    <p class="my-auto p-2">Lokasi : A1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/nl3','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/nl3.jpg">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">Masih Ingatkah Kau Jalan Pulang </h2>
-                    <p class="my-auto p-2">Author : Nadhifa Allya Tsana, Sapardi Djoko Damono </p>
-                    <p class="my-auto p-2">Tahun : 2020</p>
-                    <p class="my-auto p-2">ISBN : 9786020638331 </p>
-                    <p class="my-auto p-2">Lokasi : A1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/nl4','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/nl4.jpg">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">MetroPop: Ganjil Genap </h2>
-                    <p class="my-auto p-2">Author : Almira Bastar</p>
-                    <p class="my-auto p-2">Tahun : 2020</p>
-                    <p class="my-auto p-2">ISBN : 9786020638010</p>
-                    <p class="my-auto p-2">Lokasi : A1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/nl5','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/nl5.jpg">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">Cara Berbahagia Tanpa Kepala</h2>
-                    <p class="my-auto p-2">Author : Triskaidekaman</p>
-                    <p class="my-auto p-2">Tahun : 2019</p>
-                    <p class="my-auto p-2">ISBN : 9786020629933</p>
-                    <p class="my-auto p-2">Lokasi : A1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/nl6','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/nl6.jpg">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">Nanti Kita Cerita tentang Hari Ini </h2>
-                    <p class="my-auto p-2">Author : Marchella FP</p>
-                    <p class="my-auto p-2">Tahun : 2018</p>
-                    <p class="my-auto p-2">ISBN :  9786024248215</p>
-                    <p class="my-auto p-2">Lokasi : A1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-                </div>
-            </div>
-            
-        </div>
+        <% if (!novel.length==0) { %>
+            <% novel.forEach((novel, index) => { %>
+                <% if (novel.status === "lokal") {%>
+                    <div class="card_book mx-auto my-4">
+                        <div class="card_book_main">
+                            <div class="card_book_front">
+                                <img src="<%- novel.cover %>">
+                            </div>
+                            <div class="card_book_back">
+                                <h2 class="my-auto py-4"><%- novel.Judul %></h2>
+                                <p class="my-auto p-2">Author : <%- novel.Author %></p>
+                                <p class="my-auto p-2">Tahun : <%- novel.Tahun %></p>
+                                <p class="my-auto p-2">ISBN : <%- novel.ISBN %></p>
+                                <p class="my-auto p-2">Lokasi : <%- novel.Lokasi %></p>
+                                <p class="my-auto p-2">Stock : <%- novel.Stok %></p>
+                                <p class="my-auto p-2">Kategori Buku: <%- novel.status %></p>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            <% }) %>
+        <% } %>    
     </div>
     <div class="text-center">
         <a href="#" class="btn mx-auto btn-outline-dark btn-lg">Muat Lebih Banyak</a>
     </div>
 </div>
+
 <!-- Impor -->
 <div id="impor"><br></div>
 <div class="container my-5">
     <h1>Impor</h1>
     <div class="row">
-        <div class="card_book mx-auto my-4" onclick="window.open('/ni1','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/ni1.png">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto p-5">Six of Crows </h2>
-                    <p class="my-auto p-2">Author : Leigh Bardugo</p>
-                    <p class="my-auto p-2">Tahun : 2015</p>
-                    <p class="my-auto p-2">ISBN : 9781627795098</p>
-                    <p class="my-auto p-2">Lokasi : B1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/ni2','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/ni2.png">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto p-5">Crooked Kingdom</h2>
-                    <p class="my-auto p-2">Author : Leigh Bardugo</p>
-                    <p class="my-auto p-2">Tahun : 2016</p>
-                    <p class="my-auto p-2">ISBN : 9781250119315</p>
-                    <p class="my-auto p-2">Lokasi : B1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/ni3','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/ni3.png">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto p-5">Cinder</h2>
-                    <p class="my-auto p-2">Author : Marissa Meyer</p>
-                    <p class="my-auto p-2">Tahun : 2013</p>
-                    <p class="my-auto p-2">ISBN : 9781250007209</p>
-                    <p class="my-auto p-2">Lokasi : B1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/ni4','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/ni4.png">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto p-5">Scarlet</h2>
-                    <p class="my-auto p-2">Author : Marissa Meyer</p>
-                    <p class="my-auto p-2">Tahun : 2014</p>
-                    <p class="my-auto p-2">ISBN : 9781250007216</p>
-                    <p class="my-auto p-2">Lokasi : B1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/ni5','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/ni5.png">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto p-5">Cress</h2>
-                    <p class="my-auto p-2">Author : Marissa Meyer</p>
-                    <p class="my-auto p-2">Tahun : 2015</p>
-                    <p class="my-auto p-2">ISBN : 9781250007223</p>
-                    <p class="my-auto p-2">Lokasi : B1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/ni6','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/ni6.png">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto p-5">Winter</h2>
-                    <p class="my-auto p-2">Author : Marissa Meyer</p>
-                    <p class="my-auto p-2">Tahun : 2018</p>
-                    <p class="my-auto p-2">ISBN : 9781250007230</p>
-                    <p class="my-auto p-2">Lokasi : B1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-                </div>
-            </div>
-        </div>
+        <% if (!novel.length==0) { %>
+            <% novel.forEach((novel, index) => { %>
+                <% if (novel.status === "impor") {%>
+                    <div class="card_book mx-auto my-4">
+                        <div class="card_book_main">
+                            <div class="card_book_front">
+                                <img src="<%- novel.cover %>">
+                            </div>
+                            <div class="card_book_back">
+                                <h2 class="my-auto py-4"><%- novel.Judul %></h2>
+                                <p class="my-auto p-2">Author : <%- novel.Author %></p>
+                                <p class="my-auto p-2">Tahun : <%- novel.Tahun %></p>
+                                <p class="my-auto p-2">ISBN : <%- novel.ISBN %></p>
+                                <p class="my-auto p-2">Lokasi : <%- novel.Lokasi %></p>
+                                <p class="my-auto p-2">Stock : <%- novel.Stok %></p>
+                                <p class="my-auto p-2">Kategori Buku: <%- novel.status %></p>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            <% }) %>
+        <% } %>    
     </div>
     <div class="text-center">
         <a href="#" class="btn mx-auto btn-outline-dark btn-lg">Muat Lebih Banyak</a>
@@ -201,4 +65,4 @@
 </div>
 
 <%- contentFor('title') %>
-Dugong Bookstore
+Novel
