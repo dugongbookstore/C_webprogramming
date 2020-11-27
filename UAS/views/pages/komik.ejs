@@ -3,208 +3,61 @@
 <div class="container my-5">
     <h1>Lokal</h1>
     <div class="row">
-        <div class="card_book mx-auto my-4" onclick="window.open('/kl1','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/kl1.jpg">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">Komik KKPK : Hacker Cilik</h2>
-                    <p class="my-auto p-2">Author : Abdurrahman Aufa Liamrillah, dkk.</p>
-                    <p class="my-auto p-2">Tahun : 2020</p>
-                    <p class="my-auto p-2">ISBN : 9786232540439</p>
-                    <p class="my-auto p-2">Lokasi : C1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4"  onclick="window.open('/kl2','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/kl2.jpg">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">Why? Veterinary Medicine</h2>
-                    <p class="my-auto p-2">Author : YeaRimDang</p>
-                    <p class="my-auto p-2">Tahun : 2019</p>
-                    <p class="my-auto p-2">ISBN : 9786230005930</p>
-                    <p class="my-auto p-2">Lokasi : C1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/kl3','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/kl3.jpg">
-                </div>
-                <div class="card_book_back" >
-                    <h2 class="my-auto py-4">Nobita dan pulau keajaiban</h2>
-                    <p class="my-auto p-2">Author : Fujiko F. Fujio</p>
-                    <p class="my-auto p-2">Tahun : 2020</p>
-                    <p class="my-auto p-2">ISBN : 9786230019524</p>
-                    <p class="my-auto p-2">Lokasi : C1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/kl4','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/kl4.jpg">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">Light Novel Detektif Conan: Captured in Her Eyes</h2>
-                    <p class="my-auto p-2">Author : Aoyama Gosho</p>
-                    <p class="my-auto p-2">Tahun : 2020</p>
-                    <p class="my-auto p-2">ISBN : 9786230020681</p>
-                    <p class="my-auto p-2">Lokasi : C1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/kl5','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/kl5.jpg">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">Si Juki dan Mang Awung 2</h2>
-                    <p class="my-auto p-2">Author : Faza Ibnu Ubaydillah Salman</p>
-                    <p class="my-auto p-2">Tahun : 2020</p>
-                    <p class="my-auto p-2">ISBN : 9786230020308</p>
-                    <p class="my-auto p-2">Lokasi : C1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/kl6','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/kl6.jpg">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">Bono-chan 01</h2>
-                    <p class="my-auto p-2">Author : Mikio Igarashi</p>
-                    <p class="my-auto p-2">Tahun : 2020</p>
-                    <p class="my-auto p-2">ISBN : 9786230014154</p>
-                    <p class="my-auto p-2">Lokasi : C1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-                </div>
-            </div>
-            
-        </div>
+        <% if (!komik.length==0){ %>
+            <% komik.forEach((komik, index)=> { %>
+                <% if (komik.status === "lokal") {%>
+                    <div class="card_book mx-auto my-4">
+                        <div class="card_book_main">
+                            <div class="card_book_front">
+                                <img src="<%- komik.cover %>">
+                            </div>
+                            <div class="card_book_back">
+                                <h2 class="my-auto py-4"><%- komik.Judul %></h2>
+                                <p class="my-auto p-2">Author : <%- komik.Author %></p>
+                                <p class="my-auto p-2">Tahun : <%- komik.Tahun %></p>
+                                <p class="my-auto p-2">ISBN : <%- komik.ISBN %></p>
+                                <p class="my-auto p-2">Lokasi : <%- komik.Lokasi %></p>
+                                <p class="my-auto p-2">Stock : <%- komik.Stok %></p>
+                                <p class="my-auto p-2">Kategori Buku: <%- komik.status %></p>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            <% }) %>
+        <% } %>    
     </div>
     <div class="text-center">
         <a href="#" class="btn mx-auto btn-outline-dark btn-lg">Muat Lebih Banyak</a>
     </div>
 </div>
+
 <!-- Impor -->
 <div id="impor"><br></div>
 <div class="container my-5">
     <h1>Impor</h1>
     <div class="row">
-        <div class="card_book mx-auto my-4" onclick="window.open('/ki1','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/ki1.png">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">Boruto: Naruto Next Generations, Vol. 2</h2>
-                    <p class="my-auto p-2">Author : Masashi Kishimoto (Creator), Mikio Ikemoto (Illustrator)</p>
-                    <p class="my-auto p-2">Tahun : 2017</p>
-                    <p class="my-auto p-2">ISBN : 9781421595849</p>
-                    <p class="my-auto p-2">Lokasi : D1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/ki2','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/ki2.jpg">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">One-Punch Man, Vol. 21</h2>
-                    <p class="my-auto p-2">Author : ONE (Creator), Yusuke Murata (Illustrator)</p>
-                    <p class="my-auto p-2">Tahun : 2020</p>
-                    <p class="my-auto p-2">ISBN : 9781974717644</p>
-                    <p class="my-auto p-2">Lokasi : D1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/ki3','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/ki3.png">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">Attack on Titan 1</h2>
-                    <p class="my-auto p-2">Author : Hajime Isayama</p>
-                    <p class="my-auto p-2">Tahun : 2012</p>
-                    <p class="my-auto p-2">ISBN : 9781612620244</p>
-                    <p class="my-auto p-2">Lokasi : D1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/ki4','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/ki4.png">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">My Hero Academia, Vol. 1</h2>
-                    <p class="my-auto p-2">Author : Kohei Horikoshi</p>
-                    <p class="my-auto p-2">Tahun : 2015</p>
-                    <p class="my-auto p-2">ISBN : 9781421582696</p>
-                    <p class="my-auto p-2">Lokasi : D1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/ki5','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/ki5.png">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">Hunter x Hunter, Vol. 1</h2>
-                    <p class="my-auto p-2">Author : Yoshihiro Togashi</p>
-                    <p class="my-auto p-2">Tahun : 2005</p>
-                    <p class="my-auto p-2">ISBN : 9781591167532</p>
-                    <p class="my-auto p-2">Lokasi : D1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="card_book mx-auto my-4" onclick="window.open('/ki6','mywindow')">
-            <div class="card_book_main">
-                <div class="card_book_front">
-                    <img src="/public/img/ki6.png">
-                </div>
-                <div class="card_book_back">
-                    <h2 class="my-auto py-4">Fairy Tail, Vol. 6</h2>
-                    <p class="my-auto p-2">Author : Hiro Mashima</p>
-                    <p class="my-auto p-2">Tahun : 2011</p>
-                    <p class="my-auto p-2">ISBN : 9781612620992</p>
-                    <p class="my-auto p-2">Lokasi : D1</p>
-                    <p class="my-auto p-2">Stock : 100</p>
-
-                </div>
-            </div>
-        </div>
+        <% if (!komik.length==0){ %>
+            <% komik.forEach((komik, index)=> { %>
+                <% if (komik.status === "impor") {%>
+                    <div class="card_book mx-auto my-4">
+                        <div class="card_book_main">
+                            <div class="card_book_front">
+                                <img src="<%- komik.cover %>">
+                            </div>
+                            <div class="card_book_back">
+                                <h2 class="my-auto py-4"><%- komik.Judul %></h2>
+                                <p class="my-auto p-2">Author : <%- komik.Author %></p>
+                                <p class="my-auto p-2">Tahun : <%- komik.Tahun %></p>
+                                <p class="my-auto p-2">ISBN : <%- komik.ISBN %></p>
+                                <p class="my-auto p-2">Lokasi : <%- komik.Lokasi %></p>
+                                <p class="my-auto p-2">Stock : <%- komik.Stok %></p>
+                                <p class="my-auto p-2">Kategori Buku: <%- komik.status %></p>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            <% }) %>
+        <% } %>    
     </div>
     <div class="text-center">
         <a href="#" class="btn mx-auto btn-outline-dark btn-lg">Muat Lebih Banyak</a>
@@ -212,4 +65,4 @@
 </div>
 
 <%- contentFor('title') %>
-Dugong Bookstore
+Komik
