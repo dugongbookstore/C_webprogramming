@@ -34,6 +34,7 @@ const komik = require('./routes/komik');
 const novel = require('./routes/novel');
 const promo = require('./routes/promo');
 const search = require('./routes/search');
+const adminlogin = require('./routes/adminlogin');
 //Routing v2 : Detail Page, uses lots of resource and energy :(
 {
     //Route Komik
@@ -95,7 +96,7 @@ app.use('/komik',komik);
 app.use('/novel',novel);
 app.use('/promo',promo);
 app.use('/search',search);
-
+app.use('/me7rhg',adminlogin);
 //Start node
 const port = 3000;
 app.listen(port);

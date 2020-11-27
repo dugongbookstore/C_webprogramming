@@ -336,3 +336,12 @@ footer {
         margin: auto;
     }
 }
+.cardadm {
+    background: rgb(76,173,251);
+    background: linear-gradient(58deg, rgba(76,173,251,1) 16%, rgba(173,232,244,1) 51%, rgba(72,202,228,1) 83%);
+    width: 50%;
+    height: auto;
+    margin : auto;
+    border: 1px solid #fcb9b2;
+    border-radius: 10px;
+}

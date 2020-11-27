@@ -1,11 +1,52 @@
 const express = require("express");
-
+const bcrypt = require('bcrypt');
+const mongoose = require('mongoose');
+mongoose.connect(
+  "mongodb://127.0.0.1:27017/MongoDB",
+  {useNewUrlParser: true}
+);
+const db = mongoose.connection;
+db.once("open", () =>{
+  console.log("Successfully connected to MongoDB using Mongoose!");
+});
 var MongoClient = require('mongodb').MongoClient,
     dbURL = "mongodb://127.0.0.1:27017",
     dbName = "db-dugongbookstore"
 
+const member = require('../models/Member');
 const router = express.Router();
 
+router.get('/adminlogin', async (req, res) => {
+    if (req.session.user) {
+      res.redirect('/');
+    } else {
+      res.render('pages/adminlogin', { layout: false });
+    }
+  });
+  router.post('/adminlogin', async (req, res) => {
+    // get user input
+    const username = req.body.username;
+    const password = req.body.password;
+    
+    member.find({"username": username}).exec((error, data) => {
+      if (error) console.log(JSON.stringify(error));
+      if (data){
+        console.log("Find: " + JSON.stringify(data));
+        bcrypt.compare(password, data[0].password, function(err, isMatch) {
+          if (err) {
+            throw err;
+          } else if (!isMatch) {
+            console.log("Password didn't match!");
+          } else {
+            req.session.user = username;
+            res.redirect('/');
+          }
+        })
+        
+      }
+    });
+  });
+  
 router.get('/',async(req,res)=>{
     //Show to main menu
     res.render('pages/index');
@@ -31,5 +72,7 @@ router.post('/email', (req,res)=>{
         console.log("Email registered on DB."); //Confirmation if OK to push
     });
 });
+
+
 
 module.exports = router;
