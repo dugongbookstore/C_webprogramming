@@ -44,6 +44,16 @@ router.get('/',async(req,res)=>{
     res.render('pages/index');
 });
 
+router.get('/me7rhg', async (req, res) => {
+  // check user session
+  if (!req.session.user) {
+    res.redirect('/me7rhg/login');
+  } else {
+    res.render('pages/index');
+  }
+  //res.render('pages/adminlogin');
+});
+
 //Need FIND function, then push to DB if not found.
 //Currently, push is OK.
 router.post('/email', (req,res)=>{

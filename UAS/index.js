@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const layouts = require('express-ejs-layouts');
-//const session = require('express-session'); Not used due no login sesssion needed for user
+const session = require('express-session'); //Not used due no login sesssion needed for user
 
 const app = express();
 
@@ -23,10 +23,10 @@ app.use(bodyParser.urlencoded());
 app.use('/public',express.static('public'));
 
 //Session (Not required right now)
-/* app.use(session({
+app.use(session({
     secret: 'some_secret_key',
     cookie: {}
-})) */
+})) 
 
 //Routing
 const index = require('./routes/index');
