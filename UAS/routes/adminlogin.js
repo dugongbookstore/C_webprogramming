@@ -25,7 +25,7 @@ router.post('/login', async (req, res) => {
   // get user input
   const username = req.body.username;
   const password = req.body.password;
-  
+if(username === "dugong"){  
   member.find({"username": username}).exec((error, data) => {
     if (error) console.log(JSON.stringify(error));
     if (data){
@@ -41,9 +41,12 @@ router.post('/login', async (req, res) => {
           res.redirect('/');
         }
       })
-      
     }
   });
+}else{
+    console.log("Username didn't match!");
+    res.render('pages/adminlogin', { layout: false, error: 'Wrong username or password!' } );
+  }
 });
 
 module.exports = router;
