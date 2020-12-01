@@ -1,0 +1,45 @@
+<div class="add">
+    <h1>novel</h1>
+    <a href="./addk" class="btn btn-primary float-right">add</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Judul</th>
+                <th>Author</th>
+                <th>Tahun</th>
+                <th>ISBN</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% komik.forEach(function (komik){ %>
+                <tr>
+                    <td>
+                        <%= komik.Judul %> 
+                    </td>
+                    <td>
+                        <%= komik.Author %> 
+                    </td>
+                    <td>
+                        <%= komik.Tahun %> 
+                    </td>
+                    <td>
+                        <%= komik.ISBN %> 
+                    </td>
+                    <td>
+                        <%= komik.status %> 
+                    </td>
+                    <td>
+                        <a href="#" class="btn btn-primary">Del</a>
+                        <a href="#" class="btn btn-primary">Edit</a>
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+</div>
+
+<%- contentFor('title') %>
+list komik

@@ -1,0 +1,252 @@
+[
+    {
+        "Judul" : "Komik KKPK : Hacker Cilik" ,
+
+        "Author" : "Abdurrahman Aufa Liamrillah, dkk." ,
+
+        "Tahun" : "2020" ,
+
+        "ISBN" : "9786232540439"  ,
+
+        "Lokasi" : "C1",
+
+        "Stok" : 100,
+
+        "cover" : "public/img/kl1.jpg",
+
+        "sinopsis" : "Aufa adalah seorang anak laki-laki.Umurnya baru 10 tahun. Dia ramah, rajin,dan supel. Sayangnya, Aufa terkadang kudet, alias kurang update! Dia hanya tahu internet dari game online.'Sekarang, teknologi sudah canggih dan internet lagi marak-maraknya. Masa, FB saja kamu enggak punya?' ledek Tavia, teman sekelasnya. Aufa kesal diledek terus oleh Tavia dan teman-temannya yang lain. Dalam hati, Aufa bertekad akan mencaritahu lebih jauh tentang internet. Lihat saja!",
+
+        "href" : "dets/kl1.html",
+
+        "status" : "lokal"
+    },
+    {
+        "Judul" :  "Why? Veterinary Medicine",
+        "Author" :  "YeaRimDang" ,
+        
+        "Tahun" : "2019" ,
+        
+        "ISBN" : "9786230005930"   ,
+
+        "Lokasi" : "C1",
+
+        "Stok" : 100,
+
+        "cover" : "public/img/kl2.jpg",
+
+        "sinopsis" : "Apakah kita mengetahui informasi medis dan pengetahuan dasar tentang hewan? Alangkah baiknya jika hewan yang tinggal bersama kita dapat hidup tanpa terjangkit penyakit. Tapi, sama halnya dengan manusia, seekor hewan tidak mungkin dapat hidup tanpa terkena penyakit satu kali pun. Saat kucing yang biasanya sehat tiba-tiba sakit, jika kita tidak memahami gejala yang ditunjukkan dan memberikan diagnosis yang salah, kita bisa memperburuk penyakitnya. Mengobati dan mencegah penyakit pada hewan, menjaga kebersihan, hingga memelihara ternak semuanya diteliti dan dipelajari dalam ilmu kedokteran hewan. Sejarah ilmu kedokteran hewan sudah sangat tua. Hewan yang digunakan untuk membantu kegiatan pertanian atau yang dikonsumsi haruslah sehat agar manusia bisa hidup dengan aman. Karena itulah peran ilmu kedokteran hewan sangat penting dalam keberlangsungan hidup manusia dan hewan. Selain mengobati hewan di Rumah Sakit Hewan, bidang yang dicakup oleh ilmu ini lebih luas dari yang kita bayangkan. Dokter hewan juga merawat hewan liar yang terancam bahaya, hingga melakukan pemeriksaan dan karantina pada makanan olahan yang masuk dari luar negeri.",
+
+        "href" : "dets/kl2.html",
+
+        "status" : "lokal"
+    },
+    {
+        "Judul" : "Nobita dan pulau keajaiban" ,
+
+        "Author" : "Fujiko F. Fujio" ,
+
+        "Tahun" : "2020" ,
+
+        "ISBN" : "9786230019524" , 
+
+        "Lokasi" : "C1",
+
+        "Stok" : 100,
+
+        "cover" : "public/img/kl3.jpg",
+
+        "sinopsis" : "Nobita dkk. berkunjung ke suatu pulau ajaib, tempat para fauna yang telah punah dilestarikan kembali. Pulau tersebut dilindungi oleh kekuatan seekor kumbang badak emas yang disebut Golden Hercules. Nobita pun bertemu dengan anak laki-laki seumurannya yang bernama Dakke. Namun, tiba-tiba muncul gerombolan pemburu jahat Sharman yang mengincar Sang Kumbang Emas. Mampukah melindungi mimpi dan keajaiban pulau tersebut!?",
+
+        "href" : "dets/kl3.html",
+
+        "status" : "lokal"
+    },
+    {
+        "Judul" : "Light Novel Detektif Conan: Captured in Her Eyes",
+
+        "Author" : "Aoyama Gosho" ,
+
+        "Tahun" : "2020" ,
+
+        "ISBN" : "9786230020681"  ,
+
+        "Lokasi" : "C1",
+
+        "Stok" : 100,
+
+        "cover" : "public/img/kl4.jpg",
+
+        "sinopsis" : "Terjadi kasus penembakan berantai anggota kepolisian. Di dalam situasi seperti itu, listrik pada aula pesta tempat para anggota kepolisian berkumpul padam dan detektif Sato yang sedang berada di toilet saat itu tertembak. Ran yang kebetulan berada bersama detektif Sato melihat pelakunya! Namun, Ran mengalami shock karena menganggap tertembaknya detektif Sato adalah kesalahannya, sehingga kehilangan ingatan dan tidak dapat mengingat keluarga maupun dirinya sendiri! Dan lagi, kali ini pelaku mengincar nyawa Ran! Conan pun terus melakukan penyelidikan seorang diri karena pelakunya harus segera ditangkap. Tapi apa Conan dapat melindungi Ran hingga akhir!?",
+
+        "href" : "dets/kl4.html",
+
+        "status" : "lokal"
+    },
+    {
+        "Judul" : "Si Juki dan Mang Awung 2" ,
+
+        "Author" : "Faza Ibnu Ubaydillah Salman" ,
+
+        "Tahun" : "2020" ,
+
+        "ISBN" : "9786230020308"  ,
+
+        "Lokasi" : "C1",
+
+        "Stok" : 100,
+
+        "cover" : "public/img/kl5.jpg",
+
+        "sinopsis" : "Ada-ada aja ulah Mang Awung yang bikin Si Juki sebel... Walaupun begitu, pertemanan mereka semakin dekat. Ayo, nikmati kisah keseharian Si Juki dan Mang Awung. Semoga tetap bikin pembaca senang dan terhibur...",
+
+        "href" : "dets/kl5.html",
+
+        "status" : "lokal"
+    },
+    {
+        "Judul" :  "Bono-chan 01" ,
+
+        "Author" : "Mikio Igarashi" ,
+
+        "Tahun" : "2020" ,
+
+        "ISBN" : "9786230014154"  ,
+
+        "Lokasi" : "C1",
+
+        "Stok" : 100,
+
+        "cover" : "public/img/kl6.jpg",
+
+        "sinopsis" : "Bono ingat saat dia masih kecil dan belum bisa apa-apa. Bono pergi ke mana-mana bersama ayahnya, bermain dengan teman-teman yang lucu dan sangat menggemaskan.",
+
+        "href" : "dets/kl6.html",
+
+        "status" : "lokal"
+    },
+    {
+        "Judul" : "Boruto: Naruto Next Generations, Vol. 2" ,
+
+        "Author" : "Masashi Kishimoto (Creator), Mikio Ikemoto (Illustrator)",
+
+        "Tahun" : "2017" ,
+
+        "ISBN" : "9781421595849" ,
+
+        "Lokasi" : "D1",
+
+        "Stok" : 100,
+
+        "cover" : "public/img/ki1.png",
+
+        "sinopsis" : "Boruto gets through round two of the Chunin Exam and receives praise from his father. But what Naruto doesn’t know is that his son is cheating by using prohibited ninja tools. What will happen to Boruto when the truth is revealed? Meanwhile, darker forces are advancing behind the scenes…",
+
+        "href" : "dets/ki1.html",
+
+        "status" : "impor"
+    },
+    {
+        "Judul" : "One-Punch Man, Vol. 21" ,
+
+        "Author" : "ONE (Creator), Yusuke Murata (Illustrator)",
+
+        "Tahun" : "2020" ,
+
+        "ISBN" : "9781974717644" ,
+
+        "Lokasi" : "D1",
+
+        "Stok" : 100,
+
+        "cover" : "public/img/ki2.jpg",
+
+        "sinopsis" : "Immediately before the big Monster Association battle, the Class-S heroes hold a strategy meeting. Unfortunately, they just aren’t in sync, and when Amai Mask barges in, the situation only gets worse. Thankfully, King appears just in time to boost their morale—and it’s a good thing, too, because the big monster battle begins!",
+
+        "href" : "dets/ki2.html",
+
+        "status" : "impor"
+    },
+    {
+        "Judul" : "Attack on Titan 1"  ,
+
+        "Author" : "Hajime Isayama",
+
+        "Tahun" : "2012" ,
+
+        "ISBN" : "9781612620244" ,
+
+        "Lokasi" : "D1",
+
+        "Stok" : 100,
+
+        "cover" : "public/img/ki3.png",
+
+        "sinopsis" : "In this post-apocalytpic sci-fi story, humanity has been devastated by the bizarre, giant humanoids known as the Titans. Little is known about where they came from or why they are bent on consuming mankind. Seemingly unintelligent, they have roamed the world for years, killing everyone they see. For the past century, what’s left of man has hidden in a giant, three-walled city. People believe their 50-meter-high walls will protect them from the Titans, but the sudden appearance of an immense Titan is about to change everything.",
+
+        "href" : "dets/ki3.html",
+
+        "status" : "impor"
+    },
+    {
+        "Judul" : "My Hero Academia, Vol. 1"  ,
+        "Author" : "Kohei Horikoshi" ,
+
+        "Tahun" : "2015" ,
+
+        "ISBN" : "9781421582696" ,
+
+        "Lokasi" : "D1",
+
+        "Stok" : 100,
+
+        "cover" : "public/img/ki4.png",
+
+        "sinopsis" : "Middle school student Izuku Midoriya wants to be a hero more than anything, but he hasn’t got an ounce of power in him. With no chance of ever getting into the prestigious U.A. High School for budding heroes, his life is looking more and more like a dead end. Then an encounter with All Might, the greatest hero of them all, gives him a chance to change his destiny…",
+
+        "href" : "dets/ki4.html",
+
+        "status" : "impor"
+    },
+    {
+        "Judul" : "Hunter x Hunter, Vol. 1" ,
+
+        "Author" : "Yoshihiro Togashi" ,
+
+        "Tahun" : "2005" ,
+
+        "ISBN" : "9781591167532" ,
+
+        "Lokasi" : "D1",
+
+        "Stok" : 100,
+
+        "cover" : "public/img/ki5.png",
+
+        "sinopsis" : "Immediately before the big Monster Association battle, the Class-S heroes hold a strategy meeting. Unfortunately, they just aren’t in sync, and when Amai Mask barges in, the situation only gets worse. Thankfully, King appears just in time to boost their morale—and it’s a good thing, too, because the big monster battle begins!",
+
+        "href" : "dets/ki5.html",
+
+        "status" : "impor"
+    },
+    {
+        "Judul" : "Fairy Tail, Vol. 6" ,
+
+        "Author" : "Hiro Mashima" ,
+
+        "Tahun" : "2011" ,
+
+        "ISBN" : "9781612620992" ,
+
+        "Lokasi" : "D1",
+
+        "Stok" : 100,
+
+        "cover" : "public/img/ki6.png",
+
+        "sinopsis" : "Hotshot Natsu and his cool rival Gray are fighting to stop a calamity demon from being revived by Gray's fellow disciple Lyon and Zalty, a master of Lost Magic. But while they try to defeat the bad guys, the magical ice binding the demon keeps melting. Then a grudge between Fairy Tail and a rival guild turns to all-out war!",
+
+        "href" : "dets/ki6.html",
+
+        "status" : "impor"
+    }
+]
