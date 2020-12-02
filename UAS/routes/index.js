@@ -11,24 +11,34 @@ router.get('/',async(req,res)=>{
     res.render('pages/index');
 });
 
-//Need FIND function, then push to DB if not found.
-//Currently, push is OK.
 router.post('/email', (req,res)=>{
     //Get email
     const newsLetter = req.body.newsLetter;
+    
     //Connect to DB
     MongoClient.connect(dbURL, function(err,client){
         if (err){
             throw err;
         }
-        //Function to push ONE DATA
+        
         let db = client.db(dbName);
-        db.collection("emails")
-        .insertOne({ email: newsLetter},(err,db)=>{
+
+        //Function to FIND DATA
+        db.collection("emails").find({email: newsLetter}).toArray((err,arr)=>{
             if (err) throw err;
-            res.render('pages/index');
-        })
-        console.log("Email registered on DB."); //Confirmation if OK to push
+            else if (arr.length === 0){
+                //Function to push ONE DATA
+                db.collection("emails").insertOne({ email: newsLetter},(err,db)=>{
+                    if (err) throw err;
+                    res.render('pages/index',{ msg: "Sukses terdaftar!"});
+                })
+                console.log("Email registered on DB."); //Confirmation if OK to push
+            } else {
+                //Send error
+                res.render('pages/index',{ error: "Email yang dimasukkan sudah terdaftar!"} );
+                console.log("Email already registered on DB."); //Confirmation if NOT OK to push
+            }
+        });
     });
 });
 
