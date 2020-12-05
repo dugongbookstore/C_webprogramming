@@ -3,6 +3,9 @@ const bodyParser = require('body-parser');
 const layouts = require('express-ejs-layouts');
 //const session = require('express-session'); Not used due no login sesssion needed for user
 
+var mongoose = require('mongoose');
+var multer = require('multer');
+
 const app = express();
 
 //Layout
@@ -18,6 +21,7 @@ app.set("layout extractScripts", true);
 app.set('view engine','ejs');
 
 app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
 
 //Use static files
 app.use('/public',express.static('public'));
@@ -28,12 +32,24 @@ app.use('/public',express.static('public'));
     cookie: {}
 })) */
 
+mongoose.connect(
+    "mongodb://127.0.0.1:27017/db-dugongbookstore",
+    { useNewUrlParser: true, useUnifiedTopology: true}
+);
+mongoose.Promise = global.Promise;
+require('./models/novelSchema');
+require('./models/komikSchema');
 //Routing
+
 const index = require('./routes/index');
 const komik = require('./routes/komik');
 const novel = require('./routes/novel');
 const promo = require('./routes/promo');
 const search = require('./routes/search');
+const add = require('./routes/add');
+const addk = require('./routes/addk');
+const listn = require('./routes/listn');
+const listk = require('./routes/listk');
 //Routing v2 : Detail Page, uses lots of resource and energy :(
 {
     //Route Komik
@@ -95,6 +111,10 @@ app.use('/komik',komik);
 app.use('/novel',novel);
 app.use('/promo',promo);
 app.use('/search',search);
+app.use('/add',add);
+app.use('/addk',addk);
+app.use('/listn',listn);
+app.use('/listk',listk);
 
 //Start node
 const port = 3000;

@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const { collection } = require("./emailSchema");
 mongoose.connect(
     "mongodb://127.0.0.1:27017/db-dugongbookstore.books",
     { useNewUrlParser: true}
@@ -17,7 +18,10 @@ const bookSchema = mongoose.Schema({
     isbn: String,
     pos: String,
     stock: Number,
-    cover: String,
+    cover: {
+        data: Buffer,
+        contentType: String
+    },
     sinopsis: String,
     loc: String
 });
