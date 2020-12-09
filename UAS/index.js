@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const layouts = require('express-ejs-layouts');
-//const session = require('express-session'); Not used due no login sesssion needed for user
+const session = require('express-session'); //Not used due no login sesssion needed for user
 var mongoose = require('mongoose');
 var multer = require('multer');
 const app = express();
@@ -24,11 +24,11 @@ app.use(bodyParser.json());
 //Use static files
 app.use('/public',express.static('public'));
 
-//Session (Not required right now)
-/* app.use(session({
+//Session 
+app.use(session({
     secret: 'some_secret_key',
     cookie: {}
-})) */
+})) 
 
 mongoose.connect(
     "mongodb://127.0.0.1:27017/db-dugongbookstore",
@@ -45,6 +45,7 @@ const komik = require('./routes/index');
 const novel = require('./routes/index');
 const promo = require('./routes/promo');
 const search = require('./routes/search');
+const adminlogin = require('./routes/adminlogin');
 // const details = require('./routes/details');
 const add = require('./routes/add');
 const addk = require('./routes/addk');
@@ -63,6 +64,7 @@ app.use('/list',list);
 app.use('/addk',addk);
 app.use('/listn',listn);
 app.use('/listk',listk);
+app.use('/me7rhg',adminlogin);
 
 //Start node
 const port = 3000;
