@@ -45,7 +45,9 @@ const komik = require('./routes/index');
 const novel = require('./routes/index');
 const promo = require('./routes/promo');
 const search = require('./routes/search');
+
 const adminlogin = require('./routes/adminlogin');
+
 // const details = require('./routes/details');
 const add = require('./routes/add');
 const addk = require('./routes/addk');
