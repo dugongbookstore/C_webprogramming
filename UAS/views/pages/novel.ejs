@@ -19,6 +19,10 @@
                                 <p class="my-auto p-2">Lokasi : <%- novel.Lokasi %></p>
                                 <p class="my-auto p-2">Stock : <%- novel.Stok %></p>
                                 <p class="my-auto p-2">Kategori Buku: <%- novel.status %></p>
+                                <!-- ---------- -->
+                                <form action="novel/details/<%= novel.ISBN %>" method="post">
+                                    <button type="submit" class="btn btn-outline-secondary">Details</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -52,6 +56,10 @@
                                 <p class="my-auto p-2">Lokasi : <%- novel.Lokasi %></p>
                                 <p class="my-auto p-2">Stock : <%- novel.Stok %></p>
                                 <p class="my-auto p-2">Kategori Buku: <%- novel.status %></p>
+                                <!-- ------ -->
+                                <form action="novel/details/<%= novel.ISBN %>" method="post">
+                                    <button type="submit" class="btn btn-outline-secondary">Details</button>
+                                </form>
                             </div>
                         </div>
                     </div>

@@ -4,7 +4,7 @@ var path = require('path');
 var multer = require('multer'); 
 var router = express.Router();
 var mongoose = require('mongoose');
-var Novel = mongoose.model('Novel');
+var Book = mongoose.model('Book');
 var upload = require('./upload');
 
 router.get('/',async(req,res)=>{
@@ -12,37 +12,36 @@ router.get('/',async(req,res)=>{
     res.render('pages/add');
 });
 
-router.post('/addn',  function(req,res){
-
+router.post('/list',  function(req,res){
+    
     upload(req, res,(error) => {
         if(error){
            console.log(error);
         }else{
             var fullpath = "img/"+req.file.filename;
             var obj = {
+                Status : req.body.status,
+                Type : req.body.type,
                 Judul : req.body.name,
                 Author : req.body.author,
                 Tahun : req.body.year,
                 ISBN : req.body.ISBN,
-                Lokasi : req.body.lokasi,
+                Pos : req.body.lokasi,
                 Stok : req.body.stok,
                 cover: fullpath,
                 sinopsis : req.body.sinopsis,
-                href : req.body.href,
-                status : req.body.status,
-        
             };
-            var novel = new Novel(obj);
-            novel.save(function(error){
-                if(error){
-                    throw error;
-                }
-                res.redirect('/listn');
-            });
-              
+            const type = req.body.type;
+            const book = new Book(obj);
+            book.save(function(err){
+                if (err) throw err;
+                // ---------
+                // res.render('pages/add', {msg : "Success."})
+                res.redirect('/list')
+                console.log("Added to DB");
+            })
       }
     });    
-    
 });
 
 

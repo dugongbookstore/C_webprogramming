@@ -23,4 +23,23 @@ router.get('/',async(req,res)=>{
     });
 });
 
+router.post('/details/:ISBN', async(req, res) => {
+    const isbn = req.params.ISBN.toString();
+    console.log(isbn);
+    MongoClient.connect(dbURL, function(err,client){
+        if (err){
+            throw err;
+        }
+        //Function to read ALL DATA
+        let db = client.db(dbName);
+        db.collection("book")
+        .find({ISBN: isbn})
+        .toArray((err,data)=>{
+            if (err) throw err;
+            // res.send(data)
+            res.render('pages/details', {detail: data})
+        })
+    });
+})
+
 module.exports = router;
