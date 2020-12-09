@@ -1,7 +1,17 @@
 <div class="add">
     <h1 style="height: fit-content; padding-top: 5 cm;">Add</h1> <hr>
     <div>
-        <form action="/add/addn" enctype="multipart/form-data" method="POST">
+        <form action="/add/list" enctype="multipart/form-data" method="POST">
+            <div>
+                <label for="type">Type: </label>
+                <input type="radio" id="type" name="type" value="komik"/> Komik
+                <input type="radio" id="type" name="type" value="novel"/> Novel
+            </div>
+            <div>
+                <label for="status">Status: </label>
+                <input type="radio" id="status" name="status" value="lokal"/> lokal
+                <input type="radio" id="status" name="status" value="impor"/> impor
+            </div>
             <div> 
                 <label for="name">Title</label> 
                 <input type="text" id="name" placeholder="Title" 
@@ -38,27 +48,19 @@
                           placeholder="Sinopsis" required> 
                 </textarea>
             </div>
-            <div>
-                <label for="status">Status: </label>
-                <input type="radio" id="status" name="status" value="lokal"/> lokal
-                <input type="radio" id="status" name="status" value="impor"/> impor
-            </div>
-            <div> 
-                <label for="href">href</label> 
-                <input type="href" id="href" placeholder="href" 
-                       value="" name="href" required> 
-            </div>
             <div> 
                 <label for="image">Upload Image</label> 
                 <input type="file" id="image" 
                        name="book" value="" required> 
             </div> 
             <div> 
-                <button type="submit">Submit</button> 
+                <!-- ------------- -->
+                <button type="submit" class="btn btn-primary">Submit</button> 
+                <!-- <a href="./list" type="submit" class="btn btn-primary">Submit</a> -->
             </div>
         </form>
     </div>
-    <a href="./listn" class="btn btn-primary">Cancel</a>
+    <a href="./list" class="btn btn-secondary">Cancel</a>
 </div>
 
 <%- contentFor('title') %>

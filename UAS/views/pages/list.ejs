@@ -1,0 +1,56 @@
+<div class="add">
+    <h1>Book List</h1>
+    <a href="./add" class="btn btn-primary float-left">Add new book</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Judul</th>
+                <th>Author</th>
+                <th>Tahun</th>
+                <th>ISBN</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% book.forEach(function (book){ %>
+                <tr>
+                    <td>
+                        <%= book.Judul %> 
+                    </td>
+                    <td>
+                        <%= book.Author %> 
+                    </td>
+                    <td>
+                        <%= book.Tahun %> 
+                    </td>
+                    <td>
+                        <%= book.ISBN %> 
+                    </td>
+                    <td>
+                        <%= book.Status %> 
+                    </td>
+                    <td>
+                        <!-- ---------- -->
+                        <form action="list/delete/<%= book.ISBN %>" method="post">
+                            <button type="submit" class="btn btn-secondary">Delete</button>
+                        </form>
+                        <form action="list/edit/<%= book.ISBN %>" method="post">
+                            <button type="submit" class="btn btn-primary">Edit</button>
+                        </form>
+                        <form action="list/rec/<%= book.ISBN %>" method="post">
+                            <button type="submit" class="btn btn-primary">Recommend</button>
+                        </form>
+                        <!-- <a href="/delete/"+   class="btn btn-secondary">Delete</a> -->
+                        <!-- <a href="#" class="btn btn-primary">Del</a> -->
+                        <!-- <a href="#" class="btn btn-primary">Edit</a> -->
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+</div>
+
+<%- contentFor('title') %>
+List buku
