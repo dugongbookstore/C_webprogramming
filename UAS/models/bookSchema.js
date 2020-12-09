@@ -11,7 +11,8 @@ var bookSchema = mongoose.Schema({
     Stok: Number,
     cover: String,
     sinopsis: String,
-    Pos: String
+    Pos: String,
+    rec: Boolean
 },{
     collection: 'book'
 });

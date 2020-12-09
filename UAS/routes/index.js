@@ -8,7 +8,22 @@ const router = express.Router();
 
 router.get('/',async(req,res)=>{
     //Show to main menu
-    res.render('pages/index');
+    MongoClient.connect(dbURL, function(err,client){
+        if (err){
+            throw err;
+        }
+        //Function to read ALL DATA
+        let db = client.db(dbName);
+        db.collection("book")
+        .find({rec: true}).limit(5)
+        .toArray((err,data)=>{
+            if (err) throw err;
+            // res.send(data)
+            res.render('pages/index', {recom: data})
+            console.log(data);
+        })
+    });
+    // res.render('pages/index');
 });
 
 router.post('/email', (req,res)=>{
@@ -41,6 +56,65 @@ router.post('/email', (req,res)=>{
                 console.log("Email already registered on DB."); //Confirmation if NOT OK to push
             }
         });
+    });
+});
+
+router.get('/')
+
+router.get('/novel', async(req,res)=>{
+    //Show to novel
+    MongoClient.connect(dbURL, function(err,client){
+        if (err){
+            throw err;
+        }
+        //Function to read ALL DATA
+        let db = client.db(dbName);
+        db.collection("book")
+        .find({ Type: "novel" })
+        .toArray((err,data)=>{
+            if (err) throw err;
+            // res.send(data)
+            res.render('pages/novel', {novel: data});
+        })
+    });
+});
+
+
+router.get('/komik', async(req,res)=>{
+    //Show to novel
+    MongoClient.connect(dbURL, function(err,client){
+        if (err){
+            throw err;
+        }
+        //Function to read ALL DATA
+        let db = client.db(dbName);
+        db.collection("book")
+        .find({ Type: "komik" })
+        .toArray((err,data)=>{
+            if (err) throw err;
+            // res.send(data)
+            res.render('pages/komik', {komik: data});
+        })
+    });
+});
+
+router.get('/public/:ISBN', async(req, res) => {
+    const isbn = req.params.ISBN.toString();
+    console.log(isbn);
+    MongoClient.connect(dbURL, function(err,client){
+        if (err){
+            throw err;
+        }
+        //Function to read ALL DATA
+        let db = client.db(dbName);
+        db.collection("book")
+        .find({ISBN: isbn})
+        .toArray((err,data)=>{
+            if (err) throw err;
+            // res.send(data)
+            res.render('pages/details', {detail: data})
+            console.log(data);
+        })
     });
 });
 

@@ -36,21 +36,15 @@
 <div class="container">
     <h1>Best Seller</h1>
     <div class="row">
-        <div class="card mx-auto my-4" onclick="window.open('/kl2','mywindow')">
-            <img src="/public/img/kl2.jpg">
-        </div>
-        <div class="card mx-auto my-4"  onclick="window.open('/ki1','mywindow')"">
-            <img src="/public/img/ki1.png">
-        </div>
-        <div class="card mx-auto my-4" onclick="window.open('/nl6','mywindow')">
-            <img src="/public/img/nl6.jpg">
-        </div>
-        <div class="card mx-auto my-4" onclick="window.open('/ni2','mywindow')">
-            <img src="/public/img/ni2.png">
-        </div>
-        <div class="card mx-auto my-4" onclick="window.open('/kl6','mywindow')">
-            <img src="/public/img/kl6.jpg">
-        </div>
+        <% if (!recom.length==0) { %>
+            <% recom.forEach((recom) => { %>
+                <form action="public/<%= recom.ISBN %>" method="GET" class="mx-auto">
+                    <button type="submit" class="card mx-auto my-4"  style="width: 300px; height: 420px;">
+                        <img src="public/<%= recom.cover %>">
+                    </button>
+                </form>
+            <% }); %>
+        <% } %>
     </div>
 </div>
 <!--Newsletter-->

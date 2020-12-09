@@ -18,7 +18,7 @@ router.post('/list',  function(req,res){
         if(error){
            console.log(error);
         }else{
-            var fullpath = "img/"+req.file.filename;
+            var fullpath = "public/img/"+req.file.filename;
             var obj = {
                 Status : req.body.status,
                 Type : req.body.type,
@@ -30,6 +30,7 @@ router.post('/list',  function(req,res){
                 Stok : req.body.stok,
                 cover: fullpath,
                 sinopsis : req.body.sinopsis,
+                rec: false
             };
             const type = req.body.type;
             const book = new Book(obj);

@@ -21,7 +21,19 @@ router.get('/',async(req,res)=>{
         })
     });
 });
-// ----------
+//Recommend
+router.post('/rec/:isbn', async(req,res)=>{
+    const isbn = req.params.isbn;
+    console.log(isbn);
+    bookModel.updateOne({ISBN: isbn},{rec: true},(err,raw)=>{
+        bookModel.find({ISBN: isbn}).limit(1).exec((err,data)=>{
+            if (err) throw err;
+            console.log("Updated.");
+            res.redirect('/list');
+        })
+    })
+})
+//Delete
 router.post('/delete/:isbn', async(req,res) => {
     const isbn = req.params.isbn;
     console.log(isbn);
@@ -43,8 +55,7 @@ router.post('/delete/:isbn', async(req,res) => {
                     if (err) throw err;
                     res.redirect('/list');
                 })
-                // res.render('pages/index',{ error: "Email yang diinput sudah terdaftar!"} );
-                console.log("Deleted."); //Confirmation if NOT OK to push
+                console.log("Deleted."); 
             }
         });
     });

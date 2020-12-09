@@ -4,23 +4,22 @@
     <h1>Lokal</h1>
     <div class="row">
         <% if (!novel.length==0) { %>
-            <% novel.forEach((novel, index) => { %>
-                <% if (novel.status === "lokal") {%>
+            <% novel.forEach((novel) => { %>
+                <% if (novel.Status === "lokal") {%>
                     <div class="card_book mx-auto my-4">
                         <div class="card_book_main">
                             <div class="card_book_front">
-                                <img src="<%- novel.cover %>">
+                                <img src="public/<%= novel.cover %>">
                             </div>
                             <div class="card_book_back">
-                                <h2 class="my-auto py-4"><%- novel.Judul %></h2>
+                                <h2 class="my-auto py-4" style="font-size: 27px;"><%- novel.Judul %></h2>
                                 <p class="my-auto p-2">Author : <%- novel.Author %></p>
                                 <p class="my-auto p-2">Tahun : <%- novel.Tahun %></p>
                                 <p class="my-auto p-2">ISBN : <%- novel.ISBN %></p>
-                                <p class="my-auto p-2">Lokasi : <%- novel.Lokasi %></p>
+                                <p class="my-auto p-2">Lokasi : <%- novel.Pos %></p>
                                 <p class="my-auto p-2">Stock : <%- novel.Stok %></p>
-                                <p class="my-auto p-2">Kategori Buku: <%- novel.status %></p>
                                 <!-- ---------- -->
-                                <form action="novel/details/<%= novel.ISBN %>" method="post">
+                                <form action="public/<%= novel.ISBN %>" method="GET">
                                     <button type="submit" class="btn btn-outline-secondary">Details</button>
                                 </form>
                             </div>
@@ -28,7 +27,9 @@
                     </div>
                 <% } %>
             <% }) %>
-        <% } %>    
+        <% } else { %>
+            <h4>Tidak!</h4>  
+        <% } %>  
     </div>
     <div class="text-center">
         <a href="#" class="btn mx-auto btn-outline-dark btn-lg">Muat Lebih Banyak</a>
@@ -42,22 +43,21 @@
     <div class="row">
         <% if (!novel.length==0) { %>
             <% novel.forEach((novel, index) => { %>
-                <% if (novel.status === "impor") {%>
+                <% if (novel.Status === "impor") {%>
                     <div class="card_book mx-auto my-4">
                         <div class="card_book_main">
                             <div class="card_book_front">
-                                <img src="<%- novel.cover %>">
+                                <img src="public/<%- novel.cover %>">
                             </div>
                             <div class="card_book_back">
-                                <h2 class="my-auto py-4"><%- novel.Judul %></h2>
+                                <h2 class="my-auto py-4" style="font-size: 27px;"><%- novel.Judul %></h2>
                                 <p class="my-auto p-2">Author : <%- novel.Author %></p>
                                 <p class="my-auto p-2">Tahun : <%- novel.Tahun %></p>
                                 <p class="my-auto p-2">ISBN : <%- novel.ISBN %></p>
-                                <p class="my-auto p-2">Lokasi : <%- novel.Lokasi %></p>
+                                <p class="my-auto p-2">Lokasi : <%- novel.Pos %></p>
                                 <p class="my-auto p-2">Stock : <%- novel.Stok %></p>
-                                <p class="my-auto p-2">Kategori Buku: <%- novel.status %></p>
                                 <!-- ------ -->
-                                <form action="novel/details/<%= novel.ISBN %>" method="post">
+                                <form action="public/<%= novel.ISBN %>" method="GET">
                                     <button type="submit" class="btn btn-outline-secondary">Details</button>
                                 </form>
                             </div>
