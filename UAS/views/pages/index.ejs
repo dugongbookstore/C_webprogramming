@@ -55,10 +55,10 @@
     <form action="/email" method="post" class="form-inline justify-content-center">
         <input type="email" class="form-control form-control-lg col-5" name="newsLetter" required placeholder="Email anda" value>
         <input type="submit" class="btn btn-primary ml-3" name="submit" value="Dapatkan promo!">
-        <% if (locals.error) { %>
-            <span class="text-danger pl-2"><b><%= error %></b></span>
-        <% } else if (locals.msg) { %>
-            <span class="text-success pl-2"><b><%= msg %></b></span>
+        <% if (messages.emailError) { %>
+            <span class="text-danger pl-2"><b><%= messages.emailError %></b></span>
+        <% } else if (messages.emailOK) { %>
+            <span class="text-success pl-2"><b><%= messages.emailOK %></b></span>
         <% } %>
     </form>
     <br>
