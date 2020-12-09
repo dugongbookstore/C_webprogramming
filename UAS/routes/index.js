@@ -1,5 +1,7 @@
 const express = require("express");
 
+var flash = require('express-flash');
+
 var MongoClient = require('mongodb').MongoClient,
     dbURL = "mongodb://127.0.0.1:27017",
     dbName = "db-dugongbookstore"
@@ -20,7 +22,6 @@ router.get('/',async(req,res)=>{
             if (err) throw err;
             // res.send(data)
             res.render('pages/index', {recom: data})
-            console.log(data);
         })
     });
     // res.render('pages/index');
@@ -45,21 +46,22 @@ router.post('/email', (req,res)=>{
                 //Function to push ONE DATA
                 db.collection("emails").insertOne({ email: newsLetter},(err,db)=>{
                     if (err) throw err;
-                    res.render('pages/index',{ msg: "Sukses terdaftar!"});
+                    // res.render('pages/index',{ msg: "Sukses terdaftar!"});
+                    req.flash('emailOK','Sukses terdaftar!');
+                    res.redirect('/#news');
                 })
                 console.log("Email registered on DB."); //Confirmation if OK to push
             } else {
                 //Send error
                 // ------
-                res.render('pages/index',{ error: "Email yang dimasukkan sudah terdaftar!"} );
+                // res.render('pages/index',{ error: "Email yang dimasukkan sudah terdaftar!"} );
+                req.flash('emailError','Email yang dimasukkan sudah terdaftar!');
                 res.redirect('/#news');
                 console.log("Email already registered on DB."); //Confirmation if NOT OK to push
             }
         });
     });
 });
-
-router.get('/')
 
 router.get('/novel', async(req,res)=>{
     //Show to novel
@@ -115,6 +117,43 @@ router.get('/public/:ISBN', async(req, res) => {
             res.render('pages/details', {detail: data})
             console.log(data);
         })
+    });
+});
+
+router.get('/search', async(req,res)=>{
+    res.render('pages/search', { sRes: []});
+})
+
+router.post('/result', (req,res)=>{
+    //Get the query
+    var target = req.body.sBox.toString();
+    /* var newTarget = new RegExp(target, 'i'); */
+    console.log(target);
+    //Connect to DB
+    MongoClient.connect(dbURL, function(err,client){
+        if (err){
+            throw err;
+        }
+        
+        let db = client.db(dbName);
+
+        //Function to FIND DATA
+        db.collection("book").find(
+            {$or:[{Judul: new RegExp(target, 'i')},{Author: new RegExp(target, 'i')},{Tahun: new RegExp(target, 'i')},{ISBN: new RegExp(target, 'i')}]}
+        ).toArray((err,arr)=>{
+            if (err) throw err;
+            if (arr.length === 0){
+                //return NOT FOUND
+                res.render('pages/search',{msgError: "Buku tidak dapat ditemukan :("});
+                console.log("Book no found");
+            } 
+            else {
+                //return FOUND BOOK
+                res.render('pages/search',{sRes: arr} );
+                // res.send(arr);
+                console.log("Book found");
+            }
+        });
     });
 });
 
