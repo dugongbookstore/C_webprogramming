@@ -66,5 +66,5 @@ app.use('/me7rhg',adminlogin);
 
 //Start node
 const port = 3000;
-app.listen(port);
+app.listen(process.env.PORT||3000);
 console.log(`Running on localhost:${port}`);
