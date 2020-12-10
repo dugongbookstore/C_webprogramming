@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Dugong Bookstore package",
   "main": "server.js",
+  "engines": {
+    "node": "12.9.0"
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
