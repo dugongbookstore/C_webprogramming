@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 mongoose.connect(
-    "mongodb+srv://dugong:dugong2020@dugongcluster.u7uok.mongodb.net/test",
+    "mongodb+srv://dugong:dugong2020@dugongcluster.u7uok.mongodb.net/db-dugongbookstore",
     { useNewUrlParser: true}
 );
 const db = mongoose.connection;

@@ -2,7 +2,7 @@ const express = require('express');
 const { $where } = require('../models/bookSchema');
 
 var MongoClient = require('mongodb').MongoClient,
-    dbURL = "mongodb+srv://dugong:dugong2020@dugongcluster.u7uok.mongodb.net/test",
+    dbURL = "mongodb+srv://dugong:dugong2020@dugongcluster.u7uok.mongodb.net/db-dugongbookstore",
     dbName = "db-dugongbookstore"
 
 const router = express.Router();
