@@ -144,10 +144,9 @@ router.post('/result', (req,res)=>{
             if (err) throw err;
             if (arr.length === 0){
                 //return NOT FOUND
-                res.render('pages/search',{msgError: "Buku tidak dapat ditemukan :("});
+                res.render('pages/search',{sRes: arr});
                 console.log("Book no found");
-            } 
-            else {
+            } else {
                 //return FOUND BOOK
                 res.render('pages/search',{sRes: arr} );
                 // res.send(arr);
