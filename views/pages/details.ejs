@@ -1,0 +1,34 @@
+<% if (!detail.length==0) { %>
+    <% detail.forEach((detail) => { %>
+        <div class="det">
+            <div class="judul my-5">
+                <h3><%= detail.Judul %></h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 text-center mx-5">
+                    <img src="<%= detail.cover %>" alt="fer" class="w-100">
+                </div>
+                <div class="col my-3">
+                    <h4>Details</h4>
+                    <pre>
+        <b>Judul</b>       : <%= detail.Judul %>
+        <b>Author</b>      : <%= detail.Author %>
+        <b>Tahun</b>       : <%= detail.Tahun %>
+        <b>ISBN</b>        : <%= detail.ISBN %>
+        <b>Lokasi</b>      : <%= detail.Pos %>
+        <b>Stok</b>        : <%= detail.Stok %>
+                    </pre>
+                </div>
+            </div> <hr>
+            <div class="row mt-5 w-75 mx-5">
+                <h4>Sinopsis</h4>
+            </div>
+            <div class="row w-75 mx-auto">
+                <p><%= detail.sinopsis %></p>
+            </div> <hr>
+        </div>
+    <% }) %>
+<% } %>
+
+<%- contentFor('title') %>
+Detail

@@ -1,0 +1,72 @@
+<!-- Lokal -->
+<div id="lokal"><br></div>
+<div class="container my-5">
+    <h1>Lokal</h1>
+    <div class="row">
+        <% if (!komik.length==0){ %>
+            <% komik.forEach((komik, index)=> { %>
+                <% if (komik.Status === "lokal") {%>
+                    <div class="card_book mx-auto my-4">
+                        <div class="card_book_main">
+                            <div class="card_book_front">
+                                <img src="public/<%- komik.cover %>">
+                            </div>
+                            <div class="card_book_back">
+                                <h2 class="my-auto py-4" style="font-size: 27px;"><%- komik.Judul %></h2>
+                                <p class="my-auto p-2">Author : <%- komik.Author %></p>
+                                <p class="my-auto p-2">Tahun : <%- komik.Tahun %></p>
+                                <p class="my-auto p-2">ISBN : <%- komik.ISBN %></p>
+                                <p class="my-auto p-2">Lokasi : <%- komik.Pos %></p>
+                                <p class="my-auto p-2">Stock : <%- komik.Stok %></p>
+                                <form action="public/<%= komik.ISBN %>" method="GET">
+                                    <button type="submit" class="btn btn-outline-secondary">Details</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            <% }) %>
+        <% } %>    
+    </div>
+    <div class="text-center">
+        <a href="#" class="btn mx-auto btn-outline-dark btn-lg">Muat Lebih Banyak</a>
+    </div>
+</div>
+
+<!-- Impor -->
+<div id="impor"><br></div>
+<div class="container my-5">
+    <h1>Impor</h1>
+    <div class="row">
+        <% if (!komik.length==0){ %>
+            <% komik.forEach((komik, index)=> { %>
+                <% if (komik.Status === "impor") {%>
+                    <div class="card_book mx-auto my-4">
+                        <div class="card_book_main">
+                            <div class="card_book_front">
+                                <img src="public/<%- komik.cover %>">
+                            </div>
+                            <div class="card_book_back">
+                                <h2 class="my-auto py-4" style="font-size: 27px;"><%- komik.Judul %></h2>
+                                <p class="my-auto p-2">Author : <%- komik.Author %></p>
+                                <p class="my-auto p-2">Tahun : <%- komik.Tahun %></p>
+                                <p class="my-auto p-2">ISBN : <%- komik.ISBN %></p>
+                                <p class="my-auto p-2">Lokasi : <%- komik.Pos %></p>
+                                <p class="my-auto p-2">Stock : <%- komik.Stok %></p>
+                                <form action="public/<%= komik.ISBN %>" method="GET">
+                                    <button type="submit" class="btn btn-outline-secondary">Details</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            <% }) %>
+        <% } %>    
+    </div>
+    <div class="text-center">
+        <a href="#" class="btn mx-auto btn-outline-dark btn-lg">Muat Lebih Banyak</a>
+    </div>
+</div>
+
+<%- contentFor('title') %>
+Komik

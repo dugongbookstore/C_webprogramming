@@ -1,0 +1,67 @@
+<div class="add">
+    <h1 style="height: fit-content; padding-top: 5 cm;">Add</h1> <hr>
+    <div>
+        <form action="/add/list" enctype="multipart/form-data" method="POST">
+            <div>
+                <label for="type">Type: </label>
+                <input type="radio" id="type" name="type" value="komik"/> Komik
+                <input type="radio" id="type" name="type" value="novel"/> Novel
+            </div>
+            <div>
+                <label for="status">Status: </label>
+                <input type="radio" id="status" name="status" value="lokal"/> lokal
+                <input type="radio" id="status" name="status" value="impor"/> impor
+            </div>
+            <div> 
+                <label for="name">Title</label> 
+                <input type="text" id="name" placeholder="Title" 
+                       value="" name="name" required> 
+            </div>
+            <div> 
+                <label for="author">Author</label> 
+                <input type="text" id="author" placeholder="Author" 
+                       value="" name="author" required> 
+            </div>
+            <div> 
+                <label for="year">Year</label> 
+                <input type="text" id="year" placeholder="Year" 
+                       value="" name="year" required> 
+            </div>
+            <div> 
+                <label for="ISBN">ISBN</label> 
+                <input type="text" id="ISBN" placeholder="ISBN" 
+                       value="" name="ISBN" required> 
+            </div>
+            <div> 
+                <label for="lokasi">Lokasi</label> 
+                <input type="text" id="lokasi" placeholder="Lokasi" 
+                       value="" name="lokasi" required> 
+            </div>
+            <div> 
+                <label for="stok">Stok</label> 
+                <input type="number" min="0" id="stok" placeholder="Stok" 
+                       value="" name="stok" required> 
+            </div>
+            <div> 
+                <label for="sinopsis">Sinopsis</label> 
+                <textarea id="sinopsis" style="width: 500px;" name="sinopsis" value="" rows="5" 
+                          placeholder="Sinopsis" required> 
+                </textarea>
+            </div>
+            <div> 
+                <label for="image">Upload Image</label> 
+                <input type="file" id="image" 
+                       name="book" value="" required> 
+            </div> 
+            <div> 
+                <!-- ------------- -->
+                <button type="submit" class="btn btn-primary">Submit</button> 
+                <!-- <a href="./list" type="submit" class="btn btn-primary">Submit</a> -->
+            </div>
+        </form>
+    </div>
+    <a href="./list" class="btn btn-secondary">Cancel</a>
+</div>
+
+<%- contentFor('title') %>
+Add
