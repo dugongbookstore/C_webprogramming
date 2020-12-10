@@ -2,8 +2,12 @@ const express = require('express');
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 mongoose.connect(
-  "mongodb://127.0.0.1:27017/db-dugongbookstore",
-  {useNewUrlParser: true}
+  "mongodb+srv://dugong:dugong2020@dugongcluster.u7uok.mongodb.net/test",
+  {useNewUrlParser: true},
+  {useFindAndModify: false},
+  {useUnifiedTopology: true},
+  {useCreateIndex: true}
+
 );
 const db = mongoose.connection;
 db.once("open", () =>{

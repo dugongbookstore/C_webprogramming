@@ -3,7 +3,7 @@ const router = express.Router();
 const book = require('../models/NovelMember')
 
 var MongoClient = require('mongodb').MongoClient,
-    dbURL = "mongodb://127.0.0.1:27017",
+    dbURL = "mongodb+srv://dugong:dugong2020@dugongcluster.u7uok.mongodb.net/test",
     dbName = "db-dugongbookstore"
 
 router.get('/', async(req, res) => {

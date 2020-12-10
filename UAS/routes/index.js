@@ -3,7 +3,7 @@ const express = require("express");
 var flash = require('express-flash');
 
 var MongoClient = require('mongodb').MongoClient,
-    dbURL = "mongodb://127.0.0.1:27017",
+    dbURL = "mongodb+srv://dugong:dugong2020@dugongcluster.u7uok.mongodb.net/test",
     dbName = "db-dugongbookstore"
 
 const router = express.Router();
