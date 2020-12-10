@@ -18,7 +18,7 @@ router.post('/list',  function(req,res){
         if(error){
            console.log(error);
         }else{
-            var fullpath = "public/img/"+req.file.filename;
+            var fullpath = "img/"+req.file.filename;
             var obj = {
                 Status : req.body.status,
                 Type : req.body.type,
