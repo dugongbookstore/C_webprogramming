@@ -1,5 +1,5 @@
 const express = require('express');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const mongoose = require('mongoose');
 mongoose.connect(
   "mongodb+srv://dugong:dugong2020@dugongcluster.u7uok.mongodb.net/test",
