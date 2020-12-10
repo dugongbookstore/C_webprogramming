@@ -26,11 +26,8 @@ app.use(bodyParser.json());
 //Use static files
 app.use('/public',express.static('public'));
 
-//Session 
-app.use(session({
-    secret: 'some_secret_key',
-    cookie: {}
-})) 
+
+
 
 //Use flash
 app.use(flash());
@@ -42,6 +39,18 @@ mongoose.connect(
 mongoose.Promise = global.Promise;
 require('./models/emailSchema');
 require('./models/bookSchema');
+
+const MongoStore = require('connect-mongo')(session);
+const { options } = require('./routes/adminlogin');
+//Session 
+app.use(session({
+    secret: 'some_secret_key',
+    cookie: {},
+    store: new MongoStore({
+        url: "mongodb+srv://dugong:dugong2020@dugongcluster.u7uok.mongodb.net/test"
+    })
+})) 
+
 //Routing
 
 const index = require('./routes/index');
@@ -52,6 +61,7 @@ const search = require('./routes/index');
 const adminlogin = require('./routes/adminlogin');
 const add = require('./routes/add');
 const list = require('./routes/list');
+
 
 
 
