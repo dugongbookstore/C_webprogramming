@@ -47,7 +47,7 @@ app.use(session({
     secret: 'some_secret_key',
     cookie: {},
     store: new MongoStore({
-        url: "mongodb+srv://dugong:dugong2020@dugongcluster.u7uok.mongodb.net/test"
+        url: "mongodb+srv://dugong:dugong2020@dugongcluster.u7uok.mongodb.net/db-dugongbookstore"
     })
 })) 
 
