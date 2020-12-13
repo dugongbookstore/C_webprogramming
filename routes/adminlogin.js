@@ -15,6 +15,7 @@ db.once("open", () =>{
 const member = require('../models/Member');
 const router = express.Router();
 
+//Login - Force
 router.get('/login', async (req, res) => {
   if (req.session.user) {
     res.redirect('/');
@@ -23,6 +24,13 @@ router.get('/login', async (req, res) => {
   }
 });
 
+//Logout
+router.get('/logout', async (req, res) => {
+  req.session.destroy();
+  res.redirect('/me7rhg/login');
+});
+
+//Login Progress
 router.post('/login', async (req, res) => {
   // get user input
   const username = req.body.username;
@@ -31,12 +39,11 @@ if(username === "dugong"){
   member.find({"username": username}).exec((error, data) => {
     if (error) console.log(JSON.stringify(error));
     if (data){
-      console.log("Find: " + JSON.stringify(data));
       bcrypt.compare(password, data[0].password, function(err, isMatch) {
         if (err) {
           throw err;
         } else if (!isMatch) {
-          console.log("Password didn't match!");
+          console.log("401 - Not Authorized");
           res.render('pages/adminlogin', { layout: false, error: 'Wrong username or password!' } );
         } else {
           req.session.user = username;
@@ -46,7 +53,7 @@ if(username === "dugong"){
     }
   });
 }else{
-    console.log("Username didn't match!");
+  console.log("401 - Not Authorized");
     res.render('pages/adminlogin', { layout: false, error: 'Wrong username or password!' } );
   }
 });
