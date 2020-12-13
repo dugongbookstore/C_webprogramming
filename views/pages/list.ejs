@@ -1,6 +1,12 @@
 <div class="add">
-    <h1>Book List</h1>
-    <a href="./add" class="btn btn-primary float-left">Add new book</a>
+    <h1>Option</h1>
+    <div class="mx-2 my-3">
+        <form action="/me7rhg/logout" method="get" class="">
+            <input type="submit" class="btn btn-primary float-left" value="Log out">
+        </form>
+        <a href="./add" class="btn btn-primary mx-2">Add new book</a>
+    </div>
+    <br>
     <table class="table">
         <thead>
             <tr>
@@ -33,14 +39,20 @@
                     <td>
                         <!-- ---------- -->
                         <form action="list/delete/<%= book.ISBN %>" method="post">
-                            <button type="submit" class="btn btn-secondary">Delete</button>
+                            <button type="submit" class="btn btn-secondary my-1">Delete</button>
                         </form>
-                        <form action="list/edit/<%= book.ISBN %>" method="post">
-                            <button type="submit" class="btn btn-primary">Edit</button>
+                        <form action="list/edit/<%= book.ISBN %>" method="get">
+                            <button type="submit" class="btn btn-primary my-1">Edit</button>
                         </form>
-                        <form action="list/rec/<%= book.ISBN %>" method="post">
-                            <button type="submit" class="btn btn-primary">Recommend</button>
-                        </form>
+                        <% if (book.rec) {%>
+                            <form action="list/unrec/<%= book.ISBN %>" method="post">
+                                <button type="submit" class="btn btn-primary my-1">Not Recommend</button>
+                            </form>
+                        <%} else {%>
+                            <form action="list/rec/<%= book.ISBN %>" method="post">
+                                <button type="submit" class="btn btn-primary my-1">Recommend</button>
+                            </form>
+                        <% } %>
                         <!-- <a href="/delete/"+   class="btn btn-secondary">Delete</a> -->
                         <!-- <a href="#" class="btn btn-primary">Del</a> -->
                         <!-- <a href="#" class="btn btn-primary">Edit</a> -->
