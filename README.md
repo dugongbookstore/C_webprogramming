@@ -34,4 +34,5 @@ Internet Browser (Mobile/Desktop). <br />
 How - Bagaimana websitenya dirancang? <br />
 HTML, CSS, MongoDB, Vue.js. <br />
 
- 
+# Update for Ujian Akhir Semester - 15 December 2020
+Please do kindly check Repository "main". Thank you :)
